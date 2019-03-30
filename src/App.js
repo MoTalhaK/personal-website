@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import Home from './components/home';
 import NavBar from './components/header-component/NavBar';
-import './App.css';
+import Footer from './components/footer-component/footer';
+import './styles.css';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
           <div>
               <NavBar/>
               <Route name="home" exact path="/" component={Home} />
+              <Footer/>
           </div>
       </Router>
     );
