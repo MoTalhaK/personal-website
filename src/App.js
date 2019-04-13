@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import Home from './components/home';
 import NavBar from './components/header-component/NavBar';
 import Footer from './components/footer-component/footer';
-import './styles.css';
+// import './styles.css';
 
 class App extends Component {
   render() {

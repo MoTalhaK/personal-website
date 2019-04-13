@@ -7,7 +7,7 @@ const divStyle = {
     backgroundImage: 'url(' + backgroundUrl + ')',
     backgroundColor: "#00a6ff",
     width: '100%',
-    height: '850px'
+    height: '650px'
 };
 
 class Home extends Component {
