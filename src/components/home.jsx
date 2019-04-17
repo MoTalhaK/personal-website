@@ -1,45 +1,56 @@
 import React, {Component} from "react";
+import {ButtonToolbar, Button} from "react-bootstrap"
 import Particles from "react-particles-js"
-
-let backgroundUrl = require('./images/ag-square.png');
-
-const divStyle = {
-    backgroundImage: 'url(' + backgroundUrl + ')',
-    // backgroundColor: "#00a6ff",
-    backgroundColor: "#646464",
-    width: '100%',
-    height: '650px'
-};
 
 class Home extends Component {
     render() {
         return (
-            <div style={divStyle}>
-                <Particles
-                    params={{
-                        "particles": {
-                            "number": {
-                                "value": 60
-                            },
-                            "size": {
-                                "value": 3
-                            },
-                            "color": {
-                                "value": "#d80a6a"
-                            },
-                            "line_linked": {
-                                "color": "#d80a6a"
-                            }
-                        },
-                        "interactivity": {
-                            "events": {
-                                "onhover": {
-                                    "enable": true,
-                                    "mode": "repulse"
-                                }
-                            }
-                        }
-                    }} />
+            <div className="home-div">
+                {/*<Particles*/}
+                    {/*params={{*/}
+                        {/*"canvas": {*/}
+                            {/*el: "canvas_el",*/}
+                            {/*w: "400px",*/}
+                            {/*h: "650px",*/}
+                        {/*},*/}
+                        {/*"particles": {*/}
+                            {/*"number": {*/}
+                                {/*"value": 60,*/}
+                                {/*// "density": {*/}
+                                {/*//     "enable": false,*/}
+                                {/*//     "value_area": 800*/}
+                                {/*// }*/}
+                            {/*},*/}
+                            {/*"size": {*/}
+                                {/*"value": 3,*/}
+                            {/*}*/}
+                            {/*,*/}
+                            {/*"color": {*/}
+                                {/*"value": "#d80a6a"*/}
+                            {/*},*/}
+                            {/*"line_linked": {*/}
+                                {/*"color": "#d80a6a"*/}
+                            {/*}*/}
+                        {/*},*/}
+                        {/*"interactivity": {*/}
+                            {/*"detect_on": "canvas",*/}
+                            {/*"events": {*/}
+                                {/*"onhover": {*/}
+                                    {/*"enable": true,*/}
+                                    {/*"mode": "repulse"*/}
+                                {/*}*/}
+                            {/*}*/}
+                        {/*}*/}
+                    {/*}}/>*/}
+                    <div className="name">
+                        <h2>Hey, I'm</h2>
+                        <h1>Muhammad Khokhar</h1>
+                        <ButtonToolbar>
+                            <Button variant="outline-secondary" size="lg">View my work
+                                <i id= "right-arrow" className="fas fa-arrow-right"></i>
+                            </Button>
+                        </ButtonToolbar>
+                    </div>
             </div>
         )
     }
