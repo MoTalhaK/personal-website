@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {Route} from 'react-router-dom';
-import Home from './components/home';
+import Home from './components/home-component/home';
 import NavBar from './components/header-component/NavBar';
 import Footer from './components/footer-component/footer';
 import {Nav} from 'react-bootstrap';
