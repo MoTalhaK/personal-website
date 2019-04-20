@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-.home-div {
-    background-color: #646464;
-    background-image: url("./../images/ag-square.png");
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: table;
+.name {
     text-align: center;
-    /*display: -ms-flex;*/
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
-    /*-ms-flex-align: center;*/
-    /*-webkit-align-items: center;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: white;
+}
+
+.home-wrapper {
+    position: relative;
 }
 
 .container-button {
@@ -22,29 +18,18 @@
     padding-left: 10px;
 }
 
-h1 {
-    font-size: 300%;
+h2 {
+    /*font-size: 300%;*/
     padding-bottom: 10px;
 }
 
-h2 {
-    font-size: 160%;
-}
-
-.home-div > .name {
-    display: table-cell;
-    vertical-align: middle;
-    margin: 0 auto;
-    /*padding: 0;*/
-    position: relative;
-    width: 1056px;
-    padding-bottom: 300px;
-}
+/*h2 {*/
+    /*font-size: 160%;*/
+/*}*/
 
 .btn {
     color: white;
     margin: auto;
-    /*border-color: white;*/
     border: 2px solid;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -54,7 +39,6 @@ h2 {
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    /*transform: translate(0, 0);*/
     color: white;
     font-size: 15px;
 }
@@ -72,5 +56,4 @@ h2 {
 .btn:hover .fas {
     transform: rotateZ(90deg);
     transform-origin: center;
-    /*-webkit-transform: rotate(90deg);*/
 }
