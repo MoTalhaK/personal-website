@@ -5,9 +5,31 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            height: props.height
+        };
+    }
+
+    updateHeight() {
+        this.setState({
+            height: window.innerHeight + 'px'
+        });
+    }
+
+    async componentDidMount() {
+        window.addEventListener("resize", this.updateHeight.bind(this));
+        this.updateHeight();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateHeight.bind(this));
+    }
+
     render() {
         return (
-            <div className="home-div">
+            <div className="home-wrapper" style={{"height": this.state.height}}>
                 {/*<Particles*/}
                 {/*params={{*/}
                 {/*"canvas": {*/}
@@ -45,8 +67,8 @@ class Home extends Component {
                 {/*}*/}
                 {/*}}/>*/}
                 <div className="name">
-                    <h2>Hey, I'm</h2>
-                    <h1>Muhammad Khokhar</h1>
+                    <h4>Hey, I'm</h4>
+                    <h2>Muhammad Khokhar</h2>
                     <ButtonToolbar>
                         <Button variant="outline-secondary" size="lg">View my work
                             <div className="container-button">
