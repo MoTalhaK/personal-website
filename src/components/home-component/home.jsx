@@ -4,6 +4,7 @@ import {Nav} from 'react-bootstrap';
 import Particles from "react-particles-js"
 import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
+import './nav.css';
 
 class Home extends Component {
     constructor(props) {
