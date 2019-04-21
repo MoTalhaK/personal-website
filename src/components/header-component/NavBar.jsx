@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Nav} from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import './header.css';
 import {Link} from 'react-router-dom';

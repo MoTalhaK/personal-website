@@ -1,9 +1,10 @@
 .about-container {
-
+    align-items: center;
 }
 
 .about-title {
     text-align: center;
+    margin-bottom: 0;
 }
 
 

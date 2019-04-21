@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {ButtonToolbar, Button} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
 import Particles from "react-particles-js"
 import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
@@ -66,6 +67,23 @@ class Home extends Component {
                 {/*}*/}
                 {/*}*/}
                 {/*}}/>*/}
+
+                <header className="main">
+                    <Nav className="justify-content-end" activeKey="/home">
+                        <Nav.Item>
+                            <Nav.Link href="#">About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="link-2">Skills</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="link-3">Contact</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </header>
                 <div className="name">
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>

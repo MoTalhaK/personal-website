@@ -16,17 +16,17 @@ body {
 
 .section-container {
   width: 100%;
-  max-width: 400px;
+  /*max-width: 400px;*/
   margin-right: auto;
   margin-left: auto;
-  padding-top: 160px;
+  /*padding-top: 160px;*/
   padding-bottom: 160px;
+}
+
+.section-container.home-component {
+  padding: 0;
 }
 
 .home-section {
   background: #16151C;
-}
-
-.nav-section {
-  width: 100%;
 }

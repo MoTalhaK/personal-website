@@ -13,7 +13,6 @@ class App extends Component {
             <Router>
                 <div className="wrapper">
                     <div className="section home-section">
-                        <NavBar/>
                         <div className="section-container home-component">
                             <Route name="home" exact path="/" component={Home}/>
                         </div>
