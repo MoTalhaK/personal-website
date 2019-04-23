@@ -32,43 +32,6 @@ class Home extends Component {
     render() {
         return (
             <div className="home-wrapper" style={{"height": this.state.height}}>
-                {/*<Particles*/}
-                {/*params={{*/}
-                {/*"canvas": {*/}
-                {/*el: "canvas_el",*/}
-                {/*w: "400px",*/}
-                {/*h: "650px",*/}
-                {/*},*/}
-                {/*"particles": {*/}
-                {/*"number": {*/}
-                {/*"value": 60,*/}
-                {/*// "density": {*/}
-                {/*//     "enable": false,*/}
-                {/*//     "value_area": 800*/}
-                {/*// }*/}
-                {/*},*/}
-                {/*"size": {*/}
-                {/*"value": 3,*/}
-                {/*}*/}
-                {/*,*/}
-                {/*"color": {*/}
-                {/*"value": "#d80a6a"*/}
-                {/*},*/}
-                {/*"line_linked": {*/}
-                {/*"color": "#d80a6a"*/}
-                {/*}*/}
-                {/*},*/}
-                {/*"interactivity": {*/}
-                {/*"detect_on": "canvas",*/}
-                {/*"events": {*/}
-                {/*"onhover": {*/}
-                {/*"enable": true,*/}
-                {/*"mode": "repulse"*/}
-                {/*}*/}
-                {/*}*/}
-                {/*}*/}
-                {/*}}/>*/}
-
                 <header className="main">
                     <Nav className="justify-content-end" activeKey="/home">
                         <Nav.Item>
@@ -85,6 +48,42 @@ class Home extends Component {
                         </Nav.Item>
                     </Nav>
                 </header>
+                <Particles
+                    params={{
+                        "canvas": {
+                            el: "canvas_el",
+                            w: "400px",
+                            h: "650px",
+                        },
+                        "particles": {
+                            "number": {
+                                "value": 60,
+                                // "density": {
+                                //     "enable": false,
+                                //     "value_area": 800
+                                // }
+                            },
+                            "size": {
+                                "value": 3,
+                            }
+                            ,
+                            "color": {
+                                "value": "#d80a6a"
+                            },
+                            "line_linked": {
+                                "color": "#d80a6a"
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "repulse"
+                                }
+                            }
+                        }
+                    }}/>
                 <div className="name">
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>

@@ -1,10 +1,22 @@
 .about-container {
-    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    color: white;
+}
+
+p {
+    display: block;
+}
+
+.about-text {
+    font-size: 25px;
 }
 
 .about-title {
-    text-align: center;
-    margin-bottom: 0;
+    letter-spacing: 5px;
+    font-weight: bold;
 }
 
 

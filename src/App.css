@@ -19,7 +19,7 @@ body {
   /*max-width: 400px;*/
   margin-right: auto;
   margin-left: auto;
-  /*padding-top: 160px;*/
+  padding-top: 100px;
   padding-bottom: 160px;
 }
 
@@ -27,6 +27,14 @@ body {
   padding: 0;
 }
 
+.section-container.about-component {
+
+}
+
 .home-section {
   background: #16151C;
+}
+
+.about-section {
+  background: #282c34;
 }
