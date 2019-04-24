@@ -14,11 +14,14 @@ p {
     font-size: 25px;
 }
 
-.about-title {
+#about-title {
     letter-spacing: 5px;
     font-weight: bold;
 }
 
+.card-deck {
+    color: black;
+}
 
 
 

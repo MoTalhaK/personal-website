@@ -33,9 +33,9 @@ class Home extends Component {
         return (
             <div className="home-wrapper" style={{"height": this.state.height}}>
                 <header className="main">
-                    <Nav className="justify-content-end" activeKey="/home">
+                    <Nav className="justify-content-end" activeKey="/about">
                         <Nav.Item>
-                            <Nav.Link href="#">About</Nav.Link>
+                            <Nav.Link href="#about-title">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
