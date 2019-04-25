@@ -13,8 +13,15 @@ class Home extends Component {
         super(props);
         this.state = {
             height: props.height,
-            scrollTo: props.height
+            scrollTo: props.height,
+            opacity: 0
         };
+
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    handleScroll() {
+        this.setState({scroll: window.scrollY});
     }
 
     updateHeight() {
@@ -25,8 +32,24 @@ class Home extends Component {
     }
 
     async componentDidMount() {
+        window.onscroll = () => {
+            const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+            if (this.state.currentScrollHeight != newScrollHeight) {
+                this.setState({currentScrollHeight: newScrollHeight})
+            }
+        };
+
+        const el = document.querySelector('div');
+        this.setState({top: el.offsetTop, height: el.offsetHeight});
+        window.addEventListener('scroll', this.handleScroll);
         window.addEventListener("resize", this.updateHeight.bind(this));
         this.updateHeight();
+    }
+
+    componentDidUpdate() {
+        this.state.scroll > this.state.top ?
+            document.body.style.paddingTop = `${this.state.height}px` :
+            document.body.style.paddingTop = 0;
     }
 
     componentWillUnmount() {
@@ -42,24 +65,28 @@ class Home extends Component {
     }
 
     render() {
+        const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
+
         return (
             <div className="home-wrapper" style={{"height": this.state.height}}>
-                <header className="main">
-                    <Nav className="justify-content-end" activeKey="/about">
-                        <Nav.Item>
-                            <Nav.Link href="#about-title" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-2">Skills</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-3">Contact</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </header>
+                <div className={this.state.scroll > window.innerHeight ? "header-wrapper" : ""}>
+                    <header className="main">
+                        <Nav className="justify-content-end" activeKey="/about">
+                            <Nav.Item>
+                                <Nav.Link href="#about-title" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-2">Skills</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-3">Contact</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </header>
+                </div>
                 <Particles
                     params={{
                         "canvas": {
@@ -96,7 +123,7 @@ class Home extends Component {
                             }
                         }
                     }}/>
-                <div className="name">
+                <div className="name" style={{opacity}}>
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>
                     <Button variant="outline-secondary" size="lg" onClick={this.onScrollToAbout.bind(this)}>View my work

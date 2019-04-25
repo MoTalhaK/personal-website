@@ -9,8 +9,8 @@ body {
 }
 
 .section {
-  padding-left: 5%;
-  padding-right: 5%;
+  /*padding-left: 5%;*/
+  /*padding-right: 5%;*/
   position: relative;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .section-container.about-component {
-
+  padding-bottom: 400px;
 }
 
 .home-section {

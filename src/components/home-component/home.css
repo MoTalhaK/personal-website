@@ -9,6 +9,13 @@
     color: white;
 }
 
+.header-wrapper {
+    width: 100%;
+    background: #16151C;
+    z-index: 1;
+    position: fixed;
+}
+
 .home-wrapper {
     position: relative;
 }
