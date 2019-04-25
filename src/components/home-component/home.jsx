@@ -6,17 +6,21 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
 import './nav.css';
 
+const scrollTo = require('scroll-to-element');
+
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            height: props.height
+            height: props.height,
+            scrollTo: props.height
         };
     }
 
     updateHeight() {
         this.setState({
-            height: window.innerHeight + 'px'
+            height: window.innerHeight + 'px',
+            scrollTo: window.innerHeight
         });
     }
 
@@ -29,13 +33,21 @@ class Home extends Component {
         window.removeEventListener("resize", this.updateHeight.bind(this));
     }
 
+    onScrollToAbout() {
+        scrollTo('#about-title', this.state.scrollTo, {
+            offset: 0,
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
     render() {
         return (
             <div className="home-wrapper" style={{"height": this.state.height}}>
                 <header className="main">
                     <Nav className="justify-content-end" activeKey="/about">
                         <Nav.Item>
-                            <Nav.Link href="#about-title">About</Nav.Link>
+                            <Nav.Link href="#about-title" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
@@ -87,13 +99,12 @@ class Home extends Component {
                 <div className="name">
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>
-                    <ButtonToolbar>
-                        <Button variant="outline-secondary" size="lg">View my work
-                            <div className="container-button">
-                                <i id="right-arrow" className="fas fa-arrow-right"></i>
-                            </div>
-                        </Button>
-                    </ButtonToolbar>
+                    <Button variant="outline-secondary" size="lg" onClick={this.onScrollToAbout.bind(this)}>View my work
+                        <div className="container-button">
+                            <i id="right-arrow" className="fas fa-arrow-right"></i>
+                        </div>
+                    </Button>
+
                 </div>
             </div>
         )
