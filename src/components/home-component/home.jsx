@@ -57,7 +57,7 @@ class Home extends Component {
     }
 
     onScrollToAbout() {
-        scrollTo('#about-title', this.state.scrollTo, {
+        scrollTo('.section-container.about-component', this.state.scrollTo, {
             offset: 0,
             ease: 'out-bounce',
             duration: 2000
@@ -69,7 +69,7 @@ class Home extends Component {
 
         return (
             <div className="home-wrapper" style={{"height": this.state.height}}>
-                <div className={this.state.scroll > window.innerHeight ? "header-wrapper" : ""}>
+                <div className={this.state.scroll >= window.innerHeight ? "header-wrapper" : ""}>
                     <header className="main">
                         <Nav className="justify-content-end" activeKey="/about">
                             <Nav.Item>
