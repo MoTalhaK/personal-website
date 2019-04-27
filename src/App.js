@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import Home from './components/home-component/home';
-import NavBar from './components/header-component/NavBar';
 import About from './components/about-component/about';
+import Portfolio from './components/portfolio-component/portfolio';
 import Footer from './components/footer-component/footer';
 import './App.css';
 
@@ -20,6 +20,11 @@ class App extends Component {
                     <div className="section about-section">
                         <div className="section-container about-component">
                             <About/>
+                        </div>
+                    </div>
+                    <div className="section portfolio-section">
+                        <div className="section-container portfolio-component">
+                            <Portfolio/>
                         </div>
                     </div>
                 </div>

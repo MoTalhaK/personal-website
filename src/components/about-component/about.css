@@ -14,10 +14,41 @@ p {
     font-size: 25px;
 }
 
-#about-title {
+#header-title {
     letter-spacing: 5px;
     font-weight: bold;
+
+    /*border-bottom: 1px solid white;*/
+    /*line-height: 0.1em;*/
+    /*margin: 10px 0 20px;*/
+
+    overflow: hidden;
 }
+
+#header-title:before, #header-title:after {
+    background-color: azure;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#header-title:before {
+    right: 2.0em;
+    margin-left: -50%;
+}
+
+#header-title:after {
+    left: 2.0em;
+    margin-right: -50%;
+}
+
+/*#about-title span {*/
+    /*background: #282c34;*/
+    /*padding: 0 30px;*/
+/*}*/
 
 .card-deck {
     color: black;

@@ -64,6 +64,22 @@ class Home extends Component {
         });
     }
 
+    onScrollToHome() {
+        scrollTo('.section-container.home-component', this.state.scrollTo, {
+            offset: 0,
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
+    onScrollToPortfolio() {
+        scrollTo('.section-container.portfolio-component', this.state.scrollTo, {
+            offset: 0,
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
     render() {
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
 
@@ -71,12 +87,15 @@ class Home extends Component {
             <div className="home-wrapper" style={{"height": this.state.height}}>
                 <div className={this.state.scroll >= window.innerHeight ? "header-wrapper" : ""}>
                     <header className="main">
-                        <Nav className="justify-content-end" activeKey="/about">
+                        <Nav className="justify-content-end" activeKey="/home">
                             <Nav.Item>
-                                <Nav.Link href="#about-title" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
+                                <Nav.Link href="#" onClick={this.onScrollToHome.bind(this)}>Home</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-1">Portfolio</Nav.Link>
+                                <Nav.Link href="#" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-1" onClick={this.onScrollToPortfolio.bind(this)}>Portfolio</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="link-2">Skills</Nav.Link>
