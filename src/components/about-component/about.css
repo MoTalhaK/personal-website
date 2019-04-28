@@ -45,14 +45,11 @@ p {
     margin-right: -50%;
 }
 
-/*#about-title span {*/
-    /*background: #282c34;*/
-    /*padding: 0 30px;*/
-/*}*/
-
 .card-deck {
     color: black;
+    padding-top: 50px;
 }
+
 
 
 
