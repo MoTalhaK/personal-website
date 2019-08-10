@@ -1,24 +1,33 @@
 import React, {Component} from 'react';
-import {Card, CardDeck} from 'react-bootstrap';
+import {Card, CardDeck, Col, Image, Row} from 'react-bootstrap';
 import './about.css';
+import Container from "react-bootstrap/Container";
+import ListGroup from "react-bootstrap/ListGroup";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class About extends Component {
     render() {
         return (
             <div className="about-container">
-                <h2 id="header-title">ABOUT</h2>
-                <p className="about-text">I am an aspiring software developer based in Toronto currently pursuing a
-                    degree in computer science at York University.</p>
-                <p className="about-text">My goal is to bring awesome ideas to life, here on the web.</p>
-
+                <div className="about-fade" data-aos="fade-up">
+                    <h2 id="header-title">ABOUT</h2>
+                    <p className="about-text">I am an aspiring software developer based in Toronto currently pursuing a
+                        degree in computer science at York University.</p>
+                    <p className="about-text">My goal is to bring awesome ideas to life, here on the web.</p>
+                </div>
                 <CardDeck>
-                    <Card>
+                    <Card data-aos="fade-up">
                         <Card.Img variant="top"
-                                  src="https://cdn.pixabay.com/photo/2015/08/18/09/54/canada-893534_640.jpg" title="Ottaoutais River"/>
+                                  src="https://cdn.pixabay.com/photo/2015/08/18/09/54/canada-893534_640.jpg"
+                                  title="Ottaoutais River"/>
                         <Card.Body>
                             <Card.Title>Ottawa</Card.Title>
                             <Card.Text>
-                                Born in Pakistan, my family moved to Canada when I was very young and we first settled in the country's capital, Ottawa.
+                                Born in Pakistan, my family moved to Canada when I was very young and we first settled
+                                in the country's capital, Ottawa.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
@@ -29,12 +38,14 @@ class About extends Component {
                             </small>
                         </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card data-aos="fade-up"
+                          data-aos-delay="50">
                         <Card.Img variant="top" src="https://i.ibb.co/XzLSPyy/sauga.jpg" title="Absolute World"/>
                         <Card.Body>
                             <Card.Title>Mississauga</Card.Title>
                             <Card.Text>
-                                We lived in Ottawa for a short while and then moved to Brampton and then again settled in Mississauga where I have spent most of my life growing up. Yes, we move a lot.
+                                We lived in Ottawa for a short while and then moved to Brampton and then again settled
+                                in Mississauga where I have spent most of my life growing up. Yes, we move a lot.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
@@ -44,13 +55,15 @@ class About extends Component {
                             </small>
                         </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card data-aos="fade-up"
+                          data-aos-delay="100">
                         <Card.Img variant="top" src="https://live.staticflickr.com/2829/34171818601_23521f8218_z.jpg"
                                   height="268.375px" title="The Bergeron Centre for Engineering Excellence"/>
                         <Card.Body>
                             <Card.Title>Bergeron Centre @ YorkU</Card.Title>
                             <Card.Text>
-                                Here I am now attending York University where I have learned to love programming and bringing ideas to life. I am proud to call my self a Lassondian.
+                                Here I am now attending York University where I have learned to love programming and
+                                bringing ideas to life. I am proud to call my self a Lassondian.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
@@ -63,6 +76,38 @@ class About extends Component {
                         </Card.Footer>
                     </Card>
                 </CardDeck>
+
+                <Container>
+                    <p className="skills-text">Some of the tech I've been working with recently</p>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <ListGroup variant="flush">
+                                <ListGroup.Item className="programming-title">[ Programming ]</ListGroup.Item>
+                                <ListGroup.Item>Java</ListGroup.Item>
+                                <ListGroup.Item>Python</ListGroup.Item>
+                                <ListGroup.Item>C</ListGroup.Item>
+                                <ListGroup.Item>Bash</ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <ListGroup variant="flush">
+                                <ListGroup.Item className="web-stack-title">[ Web Stack ]</ListGroup.Item>
+                                <ListGroup.Item>HTML & CSS</ListGroup.Item>
+                                <ListGroup.Item>Javascript</ListGroup.Item>
+                                <ListGroup.Item>React</ListGroup.Item>
+                                <ListGroup.Item>Bootstrap</ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <ListGroup variant="flush">
+                                <ListGroup.Item className="tools-title">[ Tools & Frameworks ]</ListGroup.Item>
+                                <ListGroup.Item>Android Studio</ListGroup.Item>
+                                <ListGroup.Item>Git</ListGroup.Item>
+                                <ListGroup.Item>Raspberry Pi</ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
