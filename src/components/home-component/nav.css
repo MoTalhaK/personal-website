@@ -6,7 +6,6 @@
     font-size: large;
     font-weight: normal;
     text-transform: uppercase;
-
 }
 
 .nav-link {
@@ -16,6 +15,8 @@
     transition: all 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
     font-family: 'EB Garamond', cursive;
+    padding-top: 1px;
+    padding-bottom: 10px;
 }
 
 .nav-link:hover {

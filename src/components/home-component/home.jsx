@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ButtonToolbar, Button} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import Particles from "react-particles-js"
 import 'bootstrap/dist/css/bootstrap.css';

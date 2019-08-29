@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom';
 import Home from './components/home-component/home';
 import About from './components/about-component/about';
 import Portfolio from './components/portfolio-component/portfolio';
+import Contact from './components/contact-component/contact';
 import Footer from './components/footer-component/footer';
 import './App.css';
 
@@ -25,6 +26,11 @@ class App extends Component {
                     <div className="section portfolio-section">
                         <div className="section-container portfolio-component">
                             <Portfolio/>
+                        </div>
+                    </div>
+                    <div className="section contact-section">
+                        <div className="section-container contact-component">
+                            <Contact/>
                         </div>
                     </div>
                 </div>
