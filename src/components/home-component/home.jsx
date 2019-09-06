@@ -81,6 +81,14 @@ class Home extends Component {
         });
     }
 
+    onScrollToContact() {
+        scrollTo('.section-container.contact-component', this.state.scrollTo, {
+            offset: 0,
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
     render() {
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
 
@@ -102,7 +110,7 @@ class Home extends Component {
                                 <Nav.Link eventKey="link-2">Skills</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-3">Contact</Nav.Link>
+                                <Nav.Link eventKey="link-1" onClick={this.onScrollToContact.bind(this)}>Contact</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </header>
