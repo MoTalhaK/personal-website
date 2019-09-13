@@ -34,7 +34,7 @@ class Home extends Component {
     async componentDidMount() {
         window.onscroll = () => {
             const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-            if (this.state.currentScrollHeight != newScrollHeight) {
+            if (this.state.currentScrollHeight !== newScrollHeight) {
                 this.setState({currentScrollHeight: newScrollHeight})
             }
         };
