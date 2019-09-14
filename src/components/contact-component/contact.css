@@ -38,6 +38,15 @@
     color: gray;
 }
 
+input:required:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+input:required:hover {
+    opacity: 1;
+}
+
 .submit-div {
     padding-top: 6px;
     text-align: right;
