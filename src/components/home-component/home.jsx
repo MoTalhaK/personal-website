@@ -65,6 +65,15 @@ class Home extends Component {
         });
     }
 
+    onScrollToSkills() {
+        scrollTo('.section-container.skills-component', this.state.scrollTo, {
+            offset: 0,
+            //align: 'middle',
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
     onScrollToHome() {
         scrollTo('.section-container.home-component', this.state.scrollTo, {
             offset: 0,
@@ -89,6 +98,14 @@ class Home extends Component {
         });
     }
 
+    onScrollToProject() {
+        scrollTo('.project-container', this.state.scrollTo, {
+            offset: 0,
+            ease: 'out-bounce',
+            duration: 2000
+        });
+    }
+
     render() {
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
 
@@ -104,10 +121,10 @@ class Home extends Component {
                                 <Nav.Link href="#" onClick={this.onScrollToAbout.bind(this)}>About</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-1" onClick={this.onScrollToPortfolio.bind(this)}>Portfolio</Nav.Link>
+                                <Nav.Link eventKey="link-1" onClick={this.onScrollToSkills.bind(this)}>Skills</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-2">Skills</Nav.Link>
+                                <Nav.Link eventKey="link-2" onClick={this.onScrollToPortfolio.bind(this)}>Portfolio</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="link-1" onClick={this.onScrollToContact.bind(this)}>Contact</Nav.Link>
@@ -154,7 +171,7 @@ class Home extends Component {
                 <div className="name" style={{opacity}}>
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>
-                    <Button variant="outline-secondary" size="lg" onClick={this.onScrollToAbout.bind(this)}>View my work
+                    <Button className="btn-home" variant="outline-secondary" size="lg" onClick={this.onScrollToAbout.bind(this)}>View my work
                         <div className="container-button">
                             <i id="right-arrow" className="fas fa-arrow-right"></i>
                         </div>

@@ -36,11 +36,13 @@ body {
 }
 
 .about-section {
-  background: #282c34;
+  /*background: #d8ab94;*/
+  background: #eae7dc;
 }
 
 .portfolio-section {
-  background: #4C5364;
+  /*background: #4C5364;*/
+  background: #eae7dc;
 }
 
 .contact-section {

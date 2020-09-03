@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio-component/portfolio';
 import Contact from './components/contact-component/contact';
 import Footer from './components/footer-component/footer';
 import './App.css';
+import Skills from "./components/skills-component/skills";
 
 class App extends Component {
     render() {
@@ -21,6 +22,11 @@ class App extends Component {
                     <div className="section about-section">
                         <div className="section-container about-component">
                             <About/>
+                        </div>
+                    </div>
+                    <div className="section skills-section">
+                        <div className="section-container skills-component">
+                            <Skills/>
                         </div>
                     </div>
                     <div className="section portfolio-section">

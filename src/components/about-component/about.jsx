@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Card, CardDeck, Col, Image, Row} from 'react-bootstrap';
 import './about.css';
-import Container from "react-bootstrap/Container";
-import ListGroup from "react-bootstrap/ListGroup";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -76,38 +74,6 @@ class About extends Component {
                         </Card.Footer>
                     </Card>
                 </CardDeck>
-
-                <Container>
-                    <p className="skills-text">Some of the tech I've been working with recently</p>
-                    <Row>
-                        <Col xs={6} md={4}>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="programming-title">[ Programming ]</ListGroup.Item>
-                                <ListGroup.Item>Java</ListGroup.Item>
-                                <ListGroup.Item>Python</ListGroup.Item>
-                                <ListGroup.Item>C</ListGroup.Item>
-                                <ListGroup.Item>Bash</ListGroup.Item>
-                            </ListGroup>
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="web-stack-title">[ Web Stack ]</ListGroup.Item>
-                                <ListGroup.Item>HTML & CSS</ListGroup.Item>
-                                <ListGroup.Item>Javascript</ListGroup.Item>
-                                <ListGroup.Item>React</ListGroup.Item>
-                                <ListGroup.Item>Bootstrap</ListGroup.Item>
-                            </ListGroup>
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="tools-title">[ Tools & Frameworks ]</ListGroup.Item>
-                                <ListGroup.Item>Android Studio</ListGroup.Item>
-                                <ListGroup.Item>Git</ListGroup.Item>
-                                <ListGroup.Item>Raspberry Pi</ListGroup.Item>
-                            </ListGroup>
-                        </Col>
-                    </Row>
-                </Container>
             </div>
         )
     }
