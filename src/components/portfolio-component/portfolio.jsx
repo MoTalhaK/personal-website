@@ -131,7 +131,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/spellsword.PNG")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\spellsword.PNG")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -156,7 +156,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/starrysky.png")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\starrysky.png")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -181,7 +181,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/personal_website.png")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\personal_website.png")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -206,7 +206,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/oefen.png")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\oefen.png")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -231,7 +231,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/10_means_max.png")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\10_means_max.png")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -256,7 +256,7 @@ class Portfolio extends Component {
                                             <div className="content-overlay"></div>
                                             <Image
                                                 className="content-image"
-                                                src={require("D:/Repos/React/personal-website/client/src/images/defect_prediction.PNG")}
+                                                src={require("D:\\Repos\\React\\personal-website\\src\\images\\defect_prediction.PNG")}
                                                 rounded
                                                 width={350}
                                                 height={350}
@@ -393,7 +393,7 @@ function JavaGameProject() {
             </p>
             <Image
                 className="content-image"
-                src={require("D:/Repos/React/personal-website/client/src/images/oefen.png")}
+                src={require("D:\\Repos\\React\\personal-website\\src\\images\\oefen.png")}
                 rounded
                 // width={640}
                 // height={480}
@@ -449,14 +449,14 @@ function KMeansProject() {
             <p className="project-text">2 and 3-dimensional visualizations of k-means clustering:</p>
             <Image
                 className="project-image"
-                src={require("D:/Repos/React/personal-website/client/src/images/5_means_max.png")}
+                src={require("D:\\Repos\\React\\personal-website\\src\\images\\5_means_max.png")}
                 rounded
                 width={500}
                 height={500}
             />
             <Image
                 className="project-image"
-                src={require("D:/Repos/React/personal-website/client/src/images/5_means_max_2D.png")}
+                src={require("D:\\Repos\\React\\personal-website\\src\\images\\5_means_max_2D.png")}
                 rounded
                 width={500}
                 height={500}
@@ -494,7 +494,7 @@ function DefectProject() {
             </p>
             <Image
                 className="project-image"
-                src={require("D:/Repos/React/personal-website/client/src/images/random_forests.PNG")}
+                src={require("D:\\Repos\\React\\personal-website\\src\\images\\random_forests.PNG")}
                 rounded
                 // width={500}
                 // height={500}

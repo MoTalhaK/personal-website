@@ -1,19 +1,74 @@
 {
-  "name": "api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@formcarry/react": "^1.0.2",
+    "aos": "^2.3.4",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.5.1",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-hook-form": "^6.4.0",
+    "react-particles-js": "^2.6.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-scroll-into-view": "^1.8.2",
+    "react-spring": "^8.0.27",
+    "react-unity-webgl": "^7.1.10",
+    "scroll-to-element": "^2.0.3",
+    "tachyons-border-colors": "^4.2.3",
+    "tachyons-border-radius": "^5.1.3",
+    "tachyons-borders": "^3.0.4",
+    "tachyons-display": "^5.0.5",
+    "tachyons-font-family": "^4.3.4",
+    "tachyons-font-style": "^4.0.5",
+    "tachyons-font-weight": "^5.0.5",
+    "tachyons-heights": "^6.1.4",
+    "tachyons-hovers": "^2.5.2",
+    "tachyons-letter-spacing": "^3.0.5",
+    "tachyons-links": "^3.0.11",
+    "tachyons-max-widths": "^4.0.6",
+    "tachyons-skins": "^4.1.1",
+    "tachyons-skins-pseudo": "^1.0.5",
+    "tachyons-spacing": "^6.0.5",
+    "tachyons-text-align": "^3.1.0",
+    "tachyons-text-transform": "^4.0.6",
+    "tachyons-type-scale": "^6.1.1",
+    "tachyons-utilities": "^2.0.2",
+    "tachyons-widths": "^5.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoTalhaK/personal-website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemailer": "^6.4.11"
-  }
+  "bugs": {
+    "url": "https://github.com/MoTalhaK/personal-website/issues"
+  },
+  "homepage": "https://github.com/MoTalhaK/personal-website#readme"
 }
