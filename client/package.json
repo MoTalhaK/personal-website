@@ -40,7 +40,8 @@
     "tachyons-text-transform": "^4.0.6",
     "tachyons-type-scale": "^6.1.1",
     "tachyons-utilities": "^2.0.2",
-    "tachyons-widths": "^5.2.1"
+    "tachyons-widths": "^5.2.1",
+    "react-app-rewired": "^2.1.6"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -60,9 +61,6 @@
   ],
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "react-app-rewired": "^2.1.6"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MoTalhaK/personal-website.git"
