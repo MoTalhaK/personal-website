@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.portfolio-container {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    color: black;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.portfolio-text {
+    font-size: 25px;
+}
+
+.image-container{
+    /*padding: 1em 0;*/
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+    /*width: 50%;*/
+}
+
+.image-container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content {
+    position: relative;
+    /*width: 90%;*/
+    /*max-width: 400px;*/
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    /*height: 99%;*/
+    /*width: 100%;*/
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+    opacity: 1;
+}
+
+.content-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+/*.btn-container {*/
+    /*text-align: left;*/
+/*}*/
+
+/*.btn-portfolio {*/
+    /*background: #2d2d2d;*/
+    /*color: white;*/
+    /*margin: auto;*/
+    /*transition: all 0.4s ease-in-out;*/
+    /*cursor: pointer;*/
+    /*padding: 5px 25px;*/
+/*}*/
+
+/*#portfolio-link {*/
+    /*font-size: 15px;*/
+    /*display: inline-block;*/
+    /*text-rendering: auto;*/
+    /*-webkit-font-smoothing: antialiased;*/
+/*}*/
+
+/*.btn-portfolio #portfolio-link {*/
+    /*left: -10px;*/
+    /*position: relative;*/
+/*}*/
+
+.project-container {
+    text-align: left;
+}
+
+
+.project-title {
+    text-align: center;
+    padding-top: 20px;
+    /*position: center;*/
+}
+
+.project-title:after {
+    content: '';
+    /*width: 100px;*/
+    margin-right: 530px;
+    margin-left: 530px;
+    height: 4px;
+    display: block;
+    background: black;
+    margin-top: 15px;
+}
+
+.project-desc {
+    font-weight: bold;
+}
+
+.project-sw {
+    font-weight: bold;
+}
+
+.project-demo {
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 20px;
+}
+
+#project-text {
+    font-weight: bold;
+}
+
+.project-link {
+    font-weight: bold;
+}
+
+.project-italics {
+    font-style: italic;
+}
+
+.project-image {
+    /*align-content: center;*/
+    /*padding-right: 20px;*/
+    /*padding-left: 10px;*/
+    margin-right: 25px;
+}

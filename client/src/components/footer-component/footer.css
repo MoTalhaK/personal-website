@@ -1,0 +1,21 @@
+.footer-container {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    color: black;
+}
+
+footer .profile-links {
+    margin: auto;
+}
+
+footer .footnote {
+    margin-top: 10px;
+    color: #A6E22E;
+    opacity: 0.6;
+}
+
+footer .footnote .copyright {
+    color: white;
+}

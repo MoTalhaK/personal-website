@@ -1,0 +1,74 @@
+.about-container {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    color: black;
+}
+
+p {
+    display: block;
+}
+
+.list-group-item {
+    background: #282c34;
+    border-color: white;
+    font-size: 21px;
+}
+
+.programming-title, .web-stack-title, .tools-title {
+    //color: #64ffda;
+    //color: darkturquoise;
+    color: #91c7ff;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 25px;
+}
+
+#header-title {
+    letter-spacing: 9px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /*border-bottom: 1px solid white;*/
+    /*line-height: 0.1em;*/
+    /*margin: 10px 0 20px;*/
+
+    /*opacity: 1;*/
+    /*animation-name: fadeInOpacity;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-timing-function: ease-in;*/
+    /*animation-duration: 10s;*/
+    overflow: hidden;
+}
+
+#header-title:before, #header-title:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#header-title:before {
+    right: 2.0em;
+    margin-left: -50%;
+}
+
+#header-title:after {
+    left: 2.0em;
+    margin-right: -50%;
+}
+
+.card-deck {
+    color: black;
+    padding-top: 50px;
+}
+
+
+
+
+

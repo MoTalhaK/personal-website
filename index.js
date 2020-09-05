@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 var nodemailer = require("nodemailer");
 var cors = require("cors");
+var path = require("path");
 const creds = require("./config");
 
 var transport = {
@@ -50,6 +51,12 @@ router.post("/send", (req, res, next) => {
 });
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, '/build')));
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/build/index.html'));
+});
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);

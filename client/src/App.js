@@ -39,6 +39,11 @@ class App extends Component {
                             <Contact/>
                         </div>
                     </div>
+                    <div className="section footer-section">
+                        <div className="section-container footer-component">
+                            <Footer/>
+                        </div>
+                    </div>
                 </div>
             </Router>
         );
