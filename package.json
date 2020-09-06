@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": ".",
+  "homepage": "https://mhk-personal-website.herokuapp.com/",
   "version": "0.1.0",
   "engines": {
     "node": "10.15.2"
