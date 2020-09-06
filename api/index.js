@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 5000;
 const buildPath = path.join(__dirname, '..', 'build');
 
 app.use(express.static(buildPath));
-// app.get('/', function(req, res) {
-//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 var transport = {
     host: "smtp.gmail.com",
