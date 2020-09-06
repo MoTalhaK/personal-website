@@ -18,7 +18,7 @@ class Footer extends Component {
                         </a>
                     </div>
                     <div className="footnote">
-                        Muhammad Khokhar <span className="copyright">© 2015</span>
+                        Muhammad Khokhar <span className="copyright">© 2020</span>
                     </div>
                 </footer>
             </div>
