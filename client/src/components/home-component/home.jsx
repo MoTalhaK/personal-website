@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
-import Particles from "react-particles-js"
+import {Particles} from "react-particles-js"
 import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
 import './nav.css';
@@ -124,57 +124,65 @@ class Home extends Component {
                                 <Nav.Link eventKey="link-1" onClick={this.onScrollToSkills.bind(this)}>Skills</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-2" onClick={this.onScrollToPortfolio.bind(this)}>Portfolio</Nav.Link>
+                                <Nav.Link eventKey="link-2"
+                                          onClick={this.onScrollToPortfolio.bind(this)}>Portfolio</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-1" onClick={this.onScrollToContact.bind(this)}>Contact</Nav.Link>
+                                <Nav.Link eventKey="link-1"
+                                          onClick={this.onScrollToContact.bind(this)}>Contact</Nav.Link>
                             </Nav.Item>
-                            {/*<Nav.Item>*/}
-                                {/*<a id="resume" href="/" target="_blank">Resume</a>*/}
-                            {/*</Nav.Item>*/}
                         </Nav>
                     </header>
                 </div>
                 <Particles
                     params={{
-                        "canvas": {
-                            el: "canvas_el",
-                            w: "400px",
-                            h: "650px",
-                        },
                         "particles": {
                             "number": {
                                 "value": 60,
-                                // "density": {
-                                //     "enable": false,
-                                //     "value_area": 800
-                                // }
-                            },
-                            "size": {
-                                "value": 3,
-                            }
-                            ,
-                            "color": {
-                                "value": "#d80a6a"
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 1500
+                                }
                             },
                             "line_linked": {
-                                "color": "#d80a6a"
+                                "enable": true,
+                                "opacity": 0.02
+                            },
+                            "move": {
+                                "direction": "right",
+                                "speed": 0.05
+                            },
+                            "size": {
+                                "value": 1
+                            },
+                            "opacity": {
+                                "anim": {
+                                    "enable": true,
+                                    "speed": 1,
+                                    "opacity_min": 0.05
+                                }
                             }
                         },
                         "interactivity": {
-                            "detect_on": "canvas",
                             "events": {
-                                "onhover": {
+                                "onclick": {
                                     "enable": true,
-                                    "mode": "repulse"
+                                    "mode": "push"
+                                }
+                            },
+                            "modes": {
+                                "push": {
+                                    "particles_nb": 1
                                 }
                             }
-                        }
+                        },
+                        "retina_detect": true
                     }}/>
                 <div className="name" style={{opacity}}>
                     <h4>Hey, I'm</h4>
                     <h2>Muhammad Khokhar</h2>
-                    <Button className="btn-home" variant="outline-secondary" size="lg" onClick={this.onScrollToAbout.bind(this)}>View my work
+                    <Button className="btn-home" variant="outline-secondary" size="lg"
+                            onClick={this.onScrollToAbout.bind(this)}>View my work
                         <div className="container-button">
                             <i id="right-arrow" className="fas fa-arrow-right"></i>
                         </div>
@@ -186,7 +194,8 @@ class Home extends Component {
                         <a href="https://www.linkedin.com/in/muhammadkh/" target="_blank">
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.dropbox.com/s/jw3cokyufozjbuj/muhammad_khokhar_resume.pdf?dl=0" target="_blank">
+                        <a href="https://www.dropbox.com/s/jw3cokyufozjbuj/muhammad_khokhar_resume.pdf?dl=0"
+                           target="_blank">
                             <i className="fas fa-file-pdf"></i>
                         </a>
                     </div>
