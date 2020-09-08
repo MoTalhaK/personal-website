@@ -40,7 +40,7 @@ class Contact extends Component {
 
         axios({
             method: "POST",
-            url: "http://localhost:3000/send",
+            url: "https://mhk-personal-website.herokuapp.com/send",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
