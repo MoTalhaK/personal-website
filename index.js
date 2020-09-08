@@ -7,14 +7,14 @@ const creds = require("./config");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-    app.get('*', function(req, res) {
-        res.sendFile(path.join(__dirname+'/client/build/index.html'));
-    });
-}
-// app.use(express.static(path.join(__dirname, 'client/build')));
-// app.use('/static', express.static(path.join(__dirname, '..', 'build')));
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static(path.join(__dirname, 'client/build')));
+//     app.get('*', function(req, res) {
+//         res.sendFile(path.join(__dirname+'/client/build/index.html'));
+//     });
+// }
+app.use(express.static(path.join(__dirname, 'client/build')));
+// app.use('/static', express.static(path.join(__dirname, 'client/build')));
 
 var transport = {
     host: "smtp.gmail.com",
@@ -61,9 +61,9 @@ router.post("/send", (req, res, next) => {
     });
 });
 
-// app.get('*', function(req, res) {
-//     res.sendFile(path.join(__dirname+'/client/build/index.html'));
-// });
+app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 app.use(express.json());
 app.use("/", router);
