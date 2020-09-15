@@ -2,47 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92a33c8a-f208-46ea-b701-3f58bbd7fd2c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/precache-manifest.12e5a465149789c92a65460c85848321.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/10_means_max.12191170.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/5_means_max.82cbe14e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/5_means_max_2D.1482611b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/defect_prediction.c5800b11.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/oefen.26dbbe0f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/personal_website.25cc4652.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/random_forests.c9d51a10.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/spellsword.3383d679.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/build/static/media/starrysky.00212d9a.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/about-component/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/about-component/about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home-component/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home-component/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/skills-component/skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/skills-component/skills.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.Y2xpZW50XGJ1aWxk.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Muham.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/personal-website.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.12e5a465149789c92a65460c85848321.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/10_means_max.12191170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/5_means_max.82cbe14e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/5_means_max_2D.1482611b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/defect_prediction.c5800b11.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/oefen.26dbbe0f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/personal_website.25cc4652.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/random_forests.c9d51a10.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/spellsword.3383d679.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/starrysky.00212d9a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/about-component/about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/about-component/about.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/contact-component/contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/footer-component/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home-component/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home-component/home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home-component/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/project-links.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/skills-component/skills.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/skills-component/skills.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/10_means_max.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/45-degree-fabric-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/5_means_max.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/5_means_max_2D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/ag-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/batthern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/black-linen-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/defect_prediction.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/gray_sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/k_means_algo.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/kaghan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/mac_gui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/mac_gui_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/muhammad_khokhar_resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/nav_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/oefen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/personal_website.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/random_forests.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/sauga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/spellsword.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/images/starrysky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +130,26 @@
       <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="368">
               <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -107,11 +176,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project-links.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project-links.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/portfolio-component/project-links.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="345">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/vanta.net.min.js" />
         <option value="$PROJECT_DIR$/src/components/home.jsx" />
         <option value="$PROJECT_DIR$/src/components/scrollAnimation.js" />
         <option value="$PROJECT_DIR$/src/styles.css" />
@@ -198,6 +278,7 @@
         <option value="$PROJECT_DIR$/client/src/components/about-component/about.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/about-component/about.css" />
         <option value="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" />
+        <option value="$PROJECT_DIR$/functions/.gitignore" />
       </list>
     </option>
   </component>
@@ -236,6 +317,22 @@
             <path>
               <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -362,18 +459,18 @@
       <workItem from="1599597730641" duration="8061000" />
       <workItem from="1599688834843" duration="12377000" />
       <workItem from="1600050048472" duration="16692000" />
-      <workItem from="1600117577297" duration="15221000" />
+      <workItem from="1600117577297" duration="16281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435227000" />
+    <option name="totallyTimeSpent" value="436287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.32395834" side_tool="true" weight="0.3318919" />
@@ -408,7 +505,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/client/src/components/home-component/home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2783">
@@ -481,30 +577,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/footer-component/footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -526,27 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/skills-component/skills.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -610,8 +668,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/portfolio-component/project-links.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
