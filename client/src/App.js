@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import {HashRouter as Router, Link} from 'react-router-dom';
-import {Route} from 'react-router-dom';
 import Home from './components/home-component/home';
 import About from './components/about-component/about';
 import Portfolio from './components/portfolio-component/portfolio';
 import Contact from './components/contact-component/contact';
 import Footer from './components/footer-component/footer';
+import Skills from './components/skills-component/skills';
 import './App.css';
-import Skills from "./components/skills-component/skills";
 
 class App extends Component {
     render() {
@@ -15,7 +13,6 @@ class App extends Component {
             <div className="wrapper">
                 <div className="section home-section">
                     <div className="section-container home-component">
-                        {/*<Route name="home" exact path="/" component={Home}/>*/}
                         <Home/>
                     </div>
                 </div>

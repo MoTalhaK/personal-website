@@ -1,0 +1,105 @@
+.project-container {
+    text-align: left;
+}
+
+.project-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.project-desc {
+    font-weight: bold;
+}
+
+.project-sw {
+    font-weight: bold;
+}
+
+.project-demo {
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 20px;
+}
+
+#project-text {
+    font-weight: bold;
+}
+
+.project-used .project-link {
+    margin-right: 7px;
+    font-weight: bold;
+    color: red;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px 7px;
+    line-height: 1.5;
+    transition: all 0.3s cubic-bezier(0.65, 0.4, 0.33, 1) 0s;
+}
+
+/*.project-link:hover {*/
+    /*!*color: white;*!*/
+    /*background-color: gray;*/
+/*}*/
+
+.project-italics {
+    font-style: italic;
+}
+
+.project-image {
+    /*align-content: center;*/
+    /*padding-right: 20px;*/
+    /*padding-left: 10px;*/
+    margin-right: 25px;
+}
+
+.modal-tp .mod-header {
+    background: url("../../images/spellsword.PNG") center center / cover;
+    height: 500px;
+}
+
+.modal-wp .mod-header {
+    background: url("../../images/starrysky.png") center center / cover;
+}
+
+.modal-pp .mod-header {
+    background: url("../../images/personal_website.png") center center / cover;
+}
+
+.modal-jp .mod-header {
+    background: url("../../images/oefen.png") center center / cover;
+}
+
+.modal-kp .mod-header {
+    background: url("../../images/5_means_max_2D.png") center center / cover;
+}
+
+.modal-dp .mod-header {
+    background: url("../../images/defect_prediction.PNG") center center / cover;
+}
+
+.mod-header{
+    height: 400px;
+}
+
+.project-btn {
+    background-color: #fd7e14;
+    border: black;
+}
+
+.project-btn:hover {
+    background-color: #fd6a18;
+}
+
+.project-btn:focus, .project-btn:active {
+    background-color: #fd6a18 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.close-btn {
+    border: black;
+}

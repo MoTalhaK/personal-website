@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import Form from 'react-bootstrap/Form';
 import {Button} from 'react-bootstrap';
-import { useForm } from "react-hook-form";
 import axios from 'axios';
-
 import './contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class Contact extends Component {
     constructor(props) {
@@ -40,7 +42,7 @@ class Contact extends Component {
 
         axios({
             method: "POST",
-            url: "https://mhk-personal-website.herokuapp.com/send",
+            url: "https://us-central1-personal-website-82c41.cloudfunctions.net/send",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
@@ -60,10 +62,10 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="contact-container">
+            <div className="contact-container" data-aos="fade-up">
                 <h2 id="header-title-contact">CONTACT</h2>
                 <p className="contact-text">Let's get in touch!</p>
-                <div className="form-container">
+                <div className="form-container" data-aos="zoom-in">
                     <Form onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <Form.Group controlId="formGroupName">
                             <Form.Control name="name"

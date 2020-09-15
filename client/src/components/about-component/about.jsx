@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardDeck, Col, Image, Row} from 'react-bootstrap';
+import {Card, CardDeck} from 'react-bootstrap';
 import './about.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

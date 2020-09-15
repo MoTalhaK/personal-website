@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {Card} from 'react-bootstrap';
-import AOS from 'aos';
 import './skills.css';
 
 class Skills extends Component {

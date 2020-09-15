@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
-import {Image} from 'react-bootstrap';
-import ScrollIntoView from 'react-scroll-into-view'
+import {Image, Button} from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal'
 import {Container, Row, Col} from 'react-bootstrap';
 import AOS from 'aos';
 import './portfolio.css';
 import 'aos/dist/aos.css';
+import './project-links.css';
 
+/*image imports*/
 import spellsword from '../../images/spellsword.PNG';
 import starrysky from '../../images/starrysky.png';
 import personal_site from '../../images/personal_website.png';
 import oefen from '../../images/oefen.png';
 import k_means10 from '../../images/10_means_max.png';
 import defect_prediction from '../../images/defect_prediction.PNG';
-import k_means5 from '../../images/5_means_max.png';
-import k_means5_2D from '../../images/5_means_max_2D.png';
-import random_forests from '../../images/random_forests.PNG';
 
 AOS.init();
 
@@ -22,6 +21,8 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.handleMouseHover = this.handleMouseHover.bind(this);
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
         this.state = {
             isHovering: false,
             showMessage1: false,
@@ -29,9 +30,27 @@ class Portfolio extends Component {
             showMessage3: false,
             showMessage4: false,
             showMessage5: false,
-            showMessage6: false
+            showMessage6: false,
+            show: false
         };
         this.onClickHandler = this.onClickHandler.bind(this);
+    }
+
+    handleShow(e) {
+        e.preventDefault();
+        this.setState({show: true})
+    }
+
+    /*change state when user clicks outside of the modal or clicks the "close" button*/
+    handleClose() {
+        this.setState({
+            showMessage1: false,
+            showMessage2: false,
+            showMessage3: false,
+            showMessage4: false,
+            showMessage5: false,
+            showMessage6: false
+        })
     }
 
     handleMouseHover() {
@@ -44,69 +63,39 @@ class Portfolio extends Component {
         };
     }
 
+    /*handle modal dialogs when user clicks on a project*/
     onClickHandler(e, name) {
         e.preventDefault();
-        console.log(name);
-
+        // console.log(name);
         switch (name) {
             case "showMessage1":
                 this.setState({
                     showMessage1: !this.state.showMessage1,
-                    showMessage2: false,
-                    showMessage3: false,
-                    showMessage4: false,
-                    showMessage5: false,
-                    showMessage6: false
                 });
                 break;
             case "showMessage2":
                 this.setState({
                     showMessage2: !this.state.showMessage2,
-                    showMessage1: false,
-                    showMessage3: false,
-                    showMessage4: false,
-                    showMessage5: false,
-                    showMessage6: false
                 });
                 break;
             case "showMessage3":
                 this.setState({
                     showMessage3: !this.state.showMessage3,
-                    showMessage2: false,
-                    showMessage1: false,
-                    showMessage4: false,
-                    showMessage5: false,
-                    showMessage6: false
                 });
                 break;
             case "showMessage4":
                 this.setState({
                     showMessage4: !this.state.showMessage4,
-                    showMessage2: false,
-                    showMessage1: false,
-                    showMessage3: false,
-                    showMessage5: false,
-                    showMessage6: false
                 });
                 break;
             case "showMessage5":
                 this.setState({
                     showMessage5: !this.state.showMessage5,
-                    showMessage2: false,
-                    showMessage1: false,
-                    showMessage3: false,
-                    showMessage6: false,
-                    showMessage4: false
                 });
                 break;
             case "showMessage6":
                 this.setState({
                     showMessage6: !this.state.showMessage6,
-                    showMessage2: false,
-                    showMessage1: false,
-                    showMessage3: false,
-                    showMessage5: false,
-                    showMessage4: false
                 });
                 break;
             default:
@@ -115,170 +104,156 @@ class Portfolio extends Component {
     }
 
     render() {
-        const {showMessage1, showMessage2, showMessage3, showMessage4, showMessage5, showMessage6} = this.state;
         return (
             <div className="portfolio-container">
                 <div className="portfolio-fade" data-aos="fade-up">
                     <h2 id="header-title">PORTFOLIO</h2>
-                    <div className="overview"></div>
                     <p className="portfolio-text">Here are a few things I've created recently.</p>
                     <p className="portfolio-text">Click on a project to find out more!</p>
                 </div>
-                {showMessage1 && <TextProject/>}
-                {showMessage2 && <WeatherProject/>}
-                {showMessage3 && <PortfolioProject/>}
-                {showMessage4 && <JavaGameProject/>}
-                {showMessage5 && <KMeansProject/>}
-                {showMessage6 && <DefectProject/>}
+                {<TextProject show={this.state.showMessage1} hide={this.handleClose} click={this.handleClose}/>}
+                {<WeatherProject show={this.state.showMessage2} hide={this.handleClose} click={this.handleClose}/>}
+                {<PortfolioProject show={this.state.showMessage3} hide={this.handleClose} click={this.handleClose}/>}
+                {<JavaGameProject show={this.state.showMessage4} hide={this.handleClose} click={this.handleClose}/>}
+                {<KMeansProject show={this.state.showMessage5} hide={this.handleClose} click={this.handleClose}/>}
+                {<DefectProject show={this.state.showMessage6} hide={this.handleClose} click={this.handleClose}/>}
                 <Container data-aos="fade-up">
                     <Row>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a id="text-game" href="" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage1")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={spellsword}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">Text Game</h3>
-                                                <p className="content-text">Unity</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a id="text-game" href="" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage1")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={spellsword}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Text Game</h3>
+                                            <p className="content-text">Unity</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a id="weather-project" href="/" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage2")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={starrysky}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">Starrysky</h3>
-                                                <p className="content-text">Web Development</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a id="weather-project" href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage2")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={starrysky}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Starrysky</h3>
+                                            <p className="content-text">Web Development</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a href="/" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage3")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={personal_site}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">Personal Website</h3>
-                                                <p className="content-text">Web Development</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage3")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={personal_site}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Personal Website</h3>
+                                            <p className="content-text">Web Development</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a href="/" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage4")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={oefen}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">Tower Defense</h3>
-                                                <p className="content-text">Java Game</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage4")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={oefen}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Tower Defense</h3>
+                                            <p className="content-text">Java Game</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a href="/" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage5")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={k_means10}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">K-Means Clustering</h3>
-                                                <p className="content-text">Python</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage5")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={k_means10}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">K-Means Clustering</h3>
+                                            <p className="content-text">Python</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
                         <Col xs={6} md={4}>
                             <div className="image-container">
                                 <div className="content">
-                                    <ScrollIntoView selector=".portfolio-container">
-                                        <a href="/" target="_blank"
-                                           onClick={(e) => this.onClickHandler(e, "showMessage6")}>
-                                            <div className="content-overlay"></div>
-                                            <Image
-                                                className="content-image"
-                                                src={defect_prediction}
-                                                rounded
-                                                width={350}
-                                                height={350}
-                                            >
-                                            </Image>
-                                            <div className="content-details fadeIn-bottom">
-                                                <h3 className="content-title">Defect Prediction</h3>
-                                                <p className="content-text">Python</p>
-                                                <i className="fas fa-plus-circle"></i>
-                                            </div>
-                                        </a>
-                                    </ScrollIntoView>
+                                    <a href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage6")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={defect_prediction}
+                                            rounded
+                                            width={350}
+                                            height={350}
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Defect Prediction</h3>
+                                            <p className="content-text">Python</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
@@ -289,226 +264,309 @@ class Portfolio extends Component {
     }
 }
 
-function TextProject() {
+function TextProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">TEXT GAME</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                This text based game titled "Spellsword" was one of the first games developed in
-                my journey to learning game development using Unity. The game is quite simple, at each section the
-                player is given multiple options to choose from and the outcomes
-                depend on the previous choices made.</p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                The game logic was developed using C# and the various graphics and UI was created in Unity.
-                The C# scripts were attached to different game objects in Unity to make a functioning game.
-            </p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                <a className="project-link" href="https://motalhak.github.io/Spellsword/" target="_blank">Spellsword</a>
-            </p>
+        <div>
+            <Modal className="modal-tp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>TEXT GAME</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        "Spellsword" was one of the first games developed in
+                        my journey to learning game development using Unity. The game is quite simple, at each section
+                        the
+                        player is given multiple options to choose from and the outcomes
+                        depend on the previous choices made.
+                    </p>
+                    <p className="project-text">
+                        The game logic was developed using C# and the various graphics and UI were created in Unity.
+                        The C# scripts were attached to different game objects in Unity to make a functioning game.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">Unity</span>
+                        <span className="project-link">C#</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://motalhak.github.io/Spellsword/");
+                    }}>
+                        Demo
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/Spellsword");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
 
-function WeatherProject() {
+function WeatherProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">WEATHER APP</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                A weather web app that displays the current weather in any city around the world! This was a fun
-                experience
-                as I got to work with new APIs that I had not worked with before and gained more knowledge on front-end
-                web development.
-            </p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                Like my personal website, StarrySky was built entirely with React and the weather statistics were
-                obtained
-                from the OpenWeatherMap API, however, as a free user, I was limited in the amount of informaiton I could
-                pull.
-                Additionally, I made use of Google's various APIs such as the Loaction Services, Cloud Functions, and
-                Places API. The Places API
-                is used alongside Location Services to provide users with an auto-complete function in the search bar.
-                And, with React
-                being a JavaScript library, its jsx expressions proved to be quite useful in fetching and displaying API
-                statistics to users.
-            </p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                <a className="project-link" href="https://starrysky.icu/" target="_blank">Starry Sky</a>
-            </p>
+        <div>
+            <Modal className="modal-wp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>WEATHER APP</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        A weather web app that displays the current weather in any city around the world! This was a fun
+                        experience
+                        as I got to work with new APIs that I had not worked with before and gained more knowledge on
+                        front-end
+                        web development.
+                    </p>
+                    <p className="project-text">
+                        Built with React and obtained location information using Google Places API and weather
+                        statistics
+                        obtained from the OpenWeatherMap API. Auto-complete feature provides users with a seamless
+                        experience.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">React</span>
+                        <span className="project-link">JavaScript</span>
+                        <span className="project-link">Bootstrap</span>
+                        <span className="project-link">CSS</span>
+                        <span className="project-link">OpenWeatherMap API</span>
+                        <span className="project-link">Google Places API</span>
+                        <span className="project-link">Firebase</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://starrysky.icu/");
+                    }}>
+                        Demo
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/WeatherApp");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
 
-function PortfolioProject() {
+function PortfolioProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">Personal Website</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                The website you see here was created to showcase the various projects I created in my free time and
-                during my undergrad. This was a fun project to take on as I was able to completely design the website
-                the way I wanted from the ground up, including the UI and UX and the backend. The next step is to
-                optimize the site and ensure every user has a nice and seamless experience.
-            </p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                This entire project was actually started as a way to learn the React framework and familiarize myself
-                with
-                the Node Js environment. Alongside React and Node, I was able to develop my HTML and CSS skills as can
-                be
-                seen from the UI on this website. Using Node, Express, and Nodemailer, I was able to construct a fully
-                functioning "Contact Form" for receiving emails from any interested users. To actually receive these
-                emails,
-                I setup a SMTP (Simple Mail Transfer Protocol) transport with the host being my email provider, Gmail.
-            </p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                Your looking at it! Here's a link anyways:
-            </p>
-            {/*<a className="project-link" href="https://starrysky.icu/" target="_blank">Starry Sky</a>*/}
+        <div>
+            <Modal className="modal-pp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>PERSONAL WEBSITE</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        The website you see here was created to showcase the various projects I created in my free time
+                        and
+                        during my undergrad. This was a fun project to take on as I was able to completely design the
+                        website
+                        the way I wanted from the ground up, including the UI/UX and the backend.
+                    </p>
+                    <p className="project-text">
+                        All React for the frontend along with extensive use of CSS to allow for a friendly viewing
+                        experience.
+                        The backend for handling email requests was built using Node.js + Nodemailer transports.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">React</span>
+                        <span className="project-link">JavaScript</span>
+                        <span className="project-link">Bootstrap</span>
+                        <span className="project-link">CSS</span>
+                        <span className="project-link">Node</span>
+                        <span className="project-link">Nodemailer</span>
+                        <span className="project-link">Axios</span>
+                        <span className="project-link">Firebase</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://mkhokhar.me/");
+                    }}>
+                        Demo
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/personal-website");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
 
-function JavaGameProject() {
+function JavaGameProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">Java Game</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                "Oefen", a tower defense-like developed with a friend as a hobby project. In a traditional tower defense game the player places
-                towers to
-                defend against hordes of enemies. In "Oefen", the objective is the same, except you are up against a
-                computer
-                or another player and both of you have entire control over the board by placing both monsters and towers
-                to crush your opponent. Essentially a tower defense game with a bit of offense as well.
-            </p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                This game was developed entirely in Java for Windows desktop and Android/iOS.
-                This was one of the first projects, besides school related work, where I applied OOP concepts
-                such as polymorphism and inheritance extensively. For example, we created a "Card.java" class
-                which is the top-level class that all card types (like "CardAttacker.java") can extend. To build the
-                game graphics and animations we used a Java game development framework called LibGDX which provides an API
-                for Windows, iOS and Android. Finally, player data was stored using JSON arrays.
-            </p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                <a className="project-link" href="https://github.com/slymask3/Oefen" target="_blank">Oefen</a>
-            </p>
-            <Image
-                className="content-image"
-                src={oefen}
-                rounded
-                // width={640}
-                // height={480}
-            />
+        <div>
+            <Modal className="modal-jp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>JAVA GAME</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        "Oefen", a tower defense-like developed with a friend as a hobby project. In a traditional tower
+                        defense game the player places
+                        towers to
+                        defend against hordes of enemies. In "Oefen", the objective is the same, except you are up
+                        against a
+                        computer
+                        or another player and both of you have entire control over the board by placing both monsters
+                        and towers
+                        to crush your opponent.
+                    </p>
+                    <p className="project-text">
+                        This game was developed entirely in Java for Windows desktop and Android/iOS.
+                        This was one of the first projects, besides school related work, where I applied OOP concepts
+                        such as polymorphism and inheritance extensively. To build the
+                        game graphics and animations we used a Java game development framework called LibGDX which
+                        provides an API
+                        for Windows, iOS and Android. Finally, player data was stored using JSON arrays.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">Java</span>
+                        <span className="project-link">LibGDX</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/slymask3/Oefen");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
 
-function KMeansProject() {
+function KMeansProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">K-Means Clustering</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                As part of a machine learning class I took in my 4th year of undergrad, I was given the
-                opportunity to develop a k-means clustering algorithm and visualize the results in Python. Analysis was
-                based on the <span className="project-italics">seeds</span> data set which consists of three different
-                kinds of wheat: Karma, Rosa and Canadian. In addition to this data, I analyzed clustering on a
-                2-D and 3-D <span className="project-italics">points</span> data set.
-            </p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                Programmed entirely in Python using only the pandas, numpy and matplotlib libraries. The program implements
-                the general k-means algorithm as shown below:
-            </p>
-            <p className="project-text">
-                <ol>
-                    <li>
-                        Choose K candidate cluster centers.
-                    </li>
-                    <li>
-                        Assign each point to the closest cluster center.
-                    </li>
-                    <li>
-                        Set the new cluster centers as the mean value of all the points in each cluster.
-                    </li>
-                    <li>
-                        Repeat (2) and (3) for any number of iterations or until the cluster assignments no longer change.
-                    </li>
-                </ol>
-            </p>
-            <p className="project-text"><a className="project-link" href="http://www.cs.yorku.ca/~kosta/CompVis_Notes/k-means.pdf">Reference</a></p>
-            <p className="project-text">
-                This implementation of the k-means algorithm also supports a setting where the maximum distance between a point and its
-                cluster center is used instead of the default Euclidean distance. Additionally, it is possible to use a uniformly random
-                or manual initialization.
-            </p>
-            <p className="project-text">See the visualization below</p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                <a className="project-link" href="https://github.com/MoTalhaK/K-Means-Clustering" target="_blank">K-Means</a>
-            </p>
-            <p className="project-text">2 and 3-dimensional visualizations of k-means clustering:</p>
-            <Image
-                className="project-image"
-                src={k_means5}
-                rounded
-                width={500}
-                height={500}
-            />
-            <Image
-                className="project-image"
-                src={k_means5_2D}
-                rounded
-                width={500}
-                height={500}
-            />
+        <div>
+            <Modal className="modal-kp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>K-MEANS CLUSTERING</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        As part of a machine learning class I took in my 4th year of undergrad, I was given the
+                        opportunity to develop a k-means clustering algorithm and visualize the results in Python.
+                        Analysis was
+                        based on the <span className="project-italics">seeds</span> data set which consists of three
+                        different
+                        kinds of wheat: Karma, Rosa and Canadian. In addition to this data, I analyzed clustering on a
+                        2-D and 3-D <span className="project-italics">points</span> data set.
+                    </p>
+                    <p className="project-text">
+                        Programmed entirely in Python using only the pandas, numpy and matplotlib libraries. The program
+                        implements
+                        the general k-means algorithm.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">Python</span>
+                        <span className="project-link">Pandas</span>
+                        <span className="project-link">Numpy</span>
+                        <span className="project-link">Data Analysis</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/K-Means-Clustering");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
 
-function DefectProject() {
+function DefectProject(props) {
     return (
-        <div className="project-container" data-aos="zoom-in">
-            <h3 className="project-title">Defect Prediction</h3>
-            <h4 className="project-desc">Description</h4>
-            <p className="project-text">
-                In the final project for my "Software Testing" class, I was tasked with developing a set of machine
-                learning models that would predict buggy instances of code in a set of open source projects. The projects
-                analyzed were the Xorg, JDT, Lucene, and Jackrabbit repositories.
-            </p>
-            <h4 className="project-sw">Software</h4>
-            <p className="project-text">
-                The machine learning models were built in Python using the sklearn library. The models included Gaussian
-                naive bayes, decision tree, random forests, logistic regression, support vector machine, and neural network
-                classifiers. The initial performance of the classifiers was rather poor so to improve the results, a new
-                feature set was constructed using a bag-of-words model and then resampled the data using techniques such as
-                <span id="project-text"> SMOTE</span>, <span id="project-text">ADASYN</span>, and <span id="project-text">
-                Random under sampler (with/without replacement)</span>. The best performing classifier accross all the projects
-                analyzed was Random Forests.
-            </p>
-            <p className="project-text">
-                The final results can be seen below:
-            </p>
-            <h4 className="project-demo">Demo</h4>
-            <p className="project-text">
-                <a className="project-link" href="https://starrysky.icu/" target="_blank">Defect Prediction</a>
-            </p>
-            <Image
-                className="project-image"
-                src={random_forests}
-                rounded
-                // width={500}
-                // height={500}
-            />
+        <div>
+            <Modal className="modal-dp" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>BUG PREDICTION</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        In the final project for my "Software Testing" class, I was tasked with developing a set of
+                        machine
+                        learning models that would predict buggy instances of code in a set of open source projects. The
+                        projects
+                        analyzed were the Xorg, JDT, Lucene, and Jackrabbit repositories.
+                    </p>
+                    <p className="project-text">
+                        The machine learning models were built in Python using the sklearn library. The models included
+                        Gaussian
+                        naive bayes, decision tree, random forests, logistic regression, support vector machine, and
+                        neural
+                        network
+                        classifiers. The initial performance of the classifiers was rather poor so to improve the
+                        results, a new
+                        feature set was constructed using a bag-of-words model. For even more improvements, resampling
+                        was performed
+                        on the dataset.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">Python</span>
+                        <span className="project-link">NLP</span>
+                        <span className="project-link">sklearn</span>
+                        <span className="project-link">Pandas</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/4313Project");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }

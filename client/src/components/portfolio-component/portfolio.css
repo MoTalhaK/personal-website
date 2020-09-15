@@ -8,6 +8,12 @@
     color: black;
 }
 
+#portfolio-container {
+    color: black;
+    width: auto;
+    height: auto;
+}
+
 .container {
     padding-top: 50px;
 }
@@ -35,7 +41,7 @@
     /*width: 90%;*/
     /*max-width: 400px;*/
     margin: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .content .content-overlay {
@@ -100,86 +106,4 @@
 
 .fadeIn-bottom{
     top: 80%;
-}
-
-/*.btn-container {*/
-    /*text-align: left;*/
-/*}*/
-
-/*.btn-portfolio {*/
-    /*background: #2d2d2d;*/
-    /*color: white;*/
-    /*margin: auto;*/
-    /*transition: all 0.4s ease-in-out;*/
-    /*cursor: pointer;*/
-    /*padding: 5px 25px;*/
-/*}*/
-
-/*#portfolio-link {*/
-    /*font-size: 15px;*/
-    /*display: inline-block;*/
-    /*text-rendering: auto;*/
-    /*-webkit-font-smoothing: antialiased;*/
-/*}*/
-
-/*.btn-portfolio #portfolio-link {*/
-    /*left: -10px;*/
-    /*position: relative;*/
-/*}*/
-
-.project-container {
-    text-align: left;
-}
-
-
-.project-title {
-    text-align: center;
-    padding-top: 20px;
-    /*position: center;*/
-}
-
-.project-title:after {
-    content: '';
-    /*width: 100px;*/
-    margin-right: 530px;
-    margin-left: 530px;
-    height: 4px;
-    display: block;
-    background: black;
-    margin-top: 15px;
-}
-
-.project-desc {
-    font-weight: bold;
-}
-
-.project-sw {
-    font-weight: bold;
-}
-
-.project-demo {
-    font-weight: bold;
-}
-
-.project-text {
-    font-size: 20px;
-}
-
-#project-text {
-    font-weight: bold;
-}
-
-.project-link {
-    font-weight: bold;
-}
-
-.project-italics {
-    font-style: italic;
-}
-
-.project-image {
-    /*align-content: center;*/
-    /*padding-right: 20px;*/
-    /*padding-left: 10px;*/
-    margin-right: 25px;
 }
