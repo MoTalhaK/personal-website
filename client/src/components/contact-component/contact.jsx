@@ -64,7 +64,7 @@ class Contact extends Component {
         return (
             <div className="contact-container" data-aos="fade-up">
                 <h2 id="header-title-contact">CONTACT</h2>
-                <div className="header-title-bar"></div>
+                <div id="header-title-bar"></div>
                 <p className="contact-text">Let's get in touch!</p>
                 <div className="form-container" data-aos="zoom-in">
                     <Form onSubmit={this.handleSubmit.bind(this)} method="POST">

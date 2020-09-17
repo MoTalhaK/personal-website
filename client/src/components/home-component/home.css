@@ -7,6 +7,10 @@
     color: white;
 }
 
+#my-name {
+    letter-spacing: 3px;
+}
+
 .header-wrapper {
     width: 100%;
     background: #16151C;
@@ -74,10 +78,3 @@ h2 {
     transform: rotateZ(90deg);
     transform-origin: center;
 }
-
-/*@media screen and (max-width: 768px) {*/
-    /*.home-wrapper {*/
-        /*text-align: center;*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/

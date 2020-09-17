@@ -13,7 +13,7 @@ class Footer extends Component {
                         <a href="https://www.linkedin.com/in/muhammadkh/" target="_blank">
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.dropbox.com/s/qwbpjuql2ou5vjd/muhammad_khokhar_resume.pdf?dl=0" target="_blank">
+                        <a href="https://www.dropbox.com/s/rgj1sm0ab0clqxs/talha_khokhar_resume.pdf?dl=0" target="_blank">
                             <i className="fas fa-file-pdf"></i>
                         </a>
                     </div>

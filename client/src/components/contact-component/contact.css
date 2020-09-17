@@ -15,6 +15,7 @@
     margin-right: auto;
     margin-left: auto;
     width: 500px;
+    max-width: 100%;
 }
 
 .form-group {
@@ -109,6 +110,19 @@ input:required:hover {
     .contact-container {
         text-align: center;
         width: 100%;
+    }
+    #header-title-bar {
+        background: white;
+        height: 3px;
+        /*width: 70px;*/
+        margin: 2px 150px 50px 150px;
+    }
+    #header-title-contact:before, #header-title-contact:after {
+        display: none;
+    }
+    .form-container {
+        padding-left: 11px;
+        padding-right: 11px;
     }
 }
 

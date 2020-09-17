@@ -15,9 +15,11 @@ class About extends Component {
                     <h2 id="header-title">ABOUT</h2>
                     <div className="header-title-bar"></div>
                     <p className="about-text">I am a software developer based in Toronto with a background in
-                    Computer Science. I enjoy building fast and responsive websites while also keeping in mind the needs of
-                    my customers and making sure that they have a enjoyable experience.</p>
-                    <p className="about-text">At the end of the day, my goal is to bring awesome ideas to life, here on the web.</p>
+                        Computer Science. I enjoy building fast and responsive websites while also keeping in mind the
+                        needs of
+                        my customers and making sure that they have a enjoyable experience.</p>
+                    <p className="about-text">At the end of the day, my goal is to bring awesome ideas to life, here on
+                        the web.</p>
                 </div>
                 <CardDeck>
                     <Card data-aos="fade-up">
