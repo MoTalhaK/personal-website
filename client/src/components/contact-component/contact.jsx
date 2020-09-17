@@ -39,7 +39,7 @@ class Contact extends Component {
         if (errors.length > 0) {
             return false;
         }
-
+        /*send message to server*/
         axios({
             method: "POST",
             url: "https://us-central1-personal-website-82c41.cloudfunctions.net/send",
@@ -54,6 +54,7 @@ class Contact extends Component {
         })
     }
 
+    /*reset the form on submit*/
     resetForm() {
         this.setState({name: "", email: "", message: ""})
     }

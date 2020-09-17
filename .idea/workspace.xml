@@ -2,42 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92a33c8a-f208-46ea-b701-3f58bbd7fd2c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.Y2xpZW50XGJ1aWxk.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.12e5a465149789c92a65460c85848321.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.2c822d77b2038187665cfdb021fb6f6f.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.32756089.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.3df845df.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.8ed72874.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.e9e94717.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.f52705bc.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.f52705bc.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.d6fbe1c1.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.d6fbe1c1.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.7d2dd366.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.7d2dd366.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.290adec2.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.290adec2.chunk.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/10_means_max.12191170.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/5_means_max.82cbe14e.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/5_means_max_2D.1482611b.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/defect_prediction.c5800b11.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/oefen.26dbbe0f.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/personal_website.25cc4652.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/random_forests.c9d51a10.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/spellsword.3383d679.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/static/media/starrysky.00212d9a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/about-component/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/about-component/about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/contact-component/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/contact-component/contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home-component/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home-component/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/home-component/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home-component/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,18 +63,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/home-component/home.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="175" column="35" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/home-component/home.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +75,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="1265">
+              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -104,53 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="portfolio.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2346">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/contact-component/contact.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skills.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/skills-component/skills.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/about-component/about.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="62" column="44" lean-forward="true" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="324">
+              <caret line="387" column="97" lean-forward="true" selection-start-line="383" selection-start-column="53" selection-end-line="387" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -184,6 +122,7 @@
       <find>onScrollToContact</find>
       <find>currentScrollHe</find>
       <find>scrollTo</find>
+      <find>updateHeight</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,17 +171,17 @@
         <option value="$PROJECT_DIR$/client/src/components/skills-component/skills.jsx" />
         <option value="$PROJECT_DIR$/client/src/App.css" />
         <option value="$PROJECT_DIR$/client/src/components/portfolio-component/project-links.css" />
-        <option value="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/footer-component/footer.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/footer-component/footer.css" />
         <option value="$PROJECT_DIR$/client/src/components/contact-component/contact.css" />
-        <option value="$PROJECT_DIR$/client/src/components/home-component/home.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/home-component/home.css" />
         <option value="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.css" />
-        <option value="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/about-component/about.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/home-component/home.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/contact-component/contact.jsx" />
       </list>
     </option>
   </component>
@@ -262,7 +201,7 @@
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
     <handled-path value="$PROJECT_DIR$/functions/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
@@ -305,47 +244,7 @@
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="about-component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contact-component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="footer-component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="home-component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="portfolio-component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="skills-component" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -476,12 +375,12 @@
       <workItem from="1600117577297" duration="20797000" />
       <workItem from="1600216324416" duration="13196000" />
       <workItem from="1600299153687" duration="16895000" />
-      <workItem from="1600374676793" duration="4780000" />
+      <workItem from="1600374676793" duration="6499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475674000" />
+    <option name="totallyTimeSpent" value="477393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -649,16 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/home-component/nav.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -687,27 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2346">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/contact-component/contact.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/home-component/home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="175" column="35" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,10 +597,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/home-component/home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/contact-component/contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="299">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -745,17 +627,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.css">
+    <entry file="file://$PROJECT_DIR$/client/src/components/about-component/about.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="46">
+          <caret line="62" column="44" lean-forward="true" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/about-component/about.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="62" column="44" lean-forward="true" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="107">
+          <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/portfolio-component/portfolio.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="387" column="97" lean-forward="true" selection-start-line="383" selection-start-column="53" selection-end-line="387" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

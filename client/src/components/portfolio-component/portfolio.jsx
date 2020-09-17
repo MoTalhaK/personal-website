@@ -36,6 +36,7 @@ class Portfolio extends Component {
         this.onClickHandler = this.onClickHandler.bind(this);
     }
 
+    /*make modal visible*/
     handleShow(e) {
         e.preventDefault();
         this.setState({show: true})
@@ -53,6 +54,7 @@ class Portfolio extends Component {
         })
     }
 
+    /*handle the hover state of project images*/
     handleMouseHover() {
         this.setState(this.toggleHoverState);
     }

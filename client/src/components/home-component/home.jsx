@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {Particles} from "react-particles-js";
-import {Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll';
+import {Events, scroller} from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
 import './nav.css';
@@ -13,10 +13,10 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // height: props.height,
             scrollTo: props.height,
             opacity: 0,
-            width: 0, height: 0
+            width: 0,
+            height: 0
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
@@ -29,8 +29,10 @@ class Home extends Component {
         Events.scrollEvent.register("end", function () {
             console.log("end", arguments);
         });
+        /*dynamically update screen dimensions*/
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
+        /*keep track of current scroll position*/
         window.onscroll = () => {
             const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
             if (this.state.currentScrollHeight !== newScrollHeight) {
@@ -39,14 +41,19 @@ class Home extends Component {
         };
     }
 
+    /*clean up components from DOM*/
     componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
         window.removeEventListener('resize', this.updateWindowDimensions);
     }
 
+    /*function to ensure home component screen fits to browser viewport*/
     updateWindowDimensions() {
         this.setState({width: window.innerWidth, height: window.innerHeight});
     }
 
+    /*scroll to various sections throughout the website*/
     scrollToAbout() {
         scroller.scrollTo('about-element', {
             duration: 600,
@@ -87,7 +94,7 @@ class Home extends Component {
         })
     }
 
-
+    /*scroll position*/
     handleScroll() {
         this.setState({scroll: window.scrollY});
     }
@@ -100,6 +107,7 @@ class Home extends Component {
     }
 
     render() {
+        // control opacity when scrolling
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
 
         return (
