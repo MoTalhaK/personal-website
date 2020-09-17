@@ -108,6 +108,7 @@ class Portfolio extends Component {
             <div className="portfolio-container">
                 <div className="portfolio-fade" data-aos="fade-up">
                     <h2 id="header-title">PORTFOLIO</h2>
+                    <div className="header-title-bar"></div>
                     <p className="portfolio-text">Here are a few things I've created recently.</p>
                     <p className="portfolio-text">Click on a project to find out more!</p>
                 </div>
@@ -119,7 +120,7 @@ class Portfolio extends Component {
                 {<DefectProject show={this.state.showMessage6} hide={this.handleClose} click={this.handleClose}/>}
                 <Container data-aos="fade-up">
                     <Row>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a id="text-game" href="" target="_blank"
@@ -129,8 +130,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={spellsword}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -142,7 +143,7 @@ class Portfolio extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a id="weather-project" href="/" target="_blank"
@@ -152,8 +153,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={starrysky}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -165,7 +166,7 @@ class Portfolio extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a href="/" target="_blank"
@@ -175,8 +176,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={personal_site}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -188,7 +189,7 @@ class Portfolio extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a href="/" target="_blank"
@@ -198,8 +199,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={oefen}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -211,7 +212,7 @@ class Portfolio extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a href="/" target="_blank"
@@ -221,8 +222,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={k_means10}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -234,7 +235,7 @@ class Portfolio extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={12} md={4}>
                             <div className="image-container">
                                 <div className="content">
                                     <a href="/" target="_blank"
@@ -244,8 +245,8 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={defect_prediction}
                                             rounded
-                                            width={350}
-                                            height={350}
+                                            // width={350}
+                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">

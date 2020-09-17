@@ -5,7 +5,6 @@
     transform: translateY(-50%);
     width: 100%;
     color: white;
-
 }
 
 .header-wrapper {
@@ -75,3 +74,10 @@ h2 {
     transform: rotateZ(90deg);
     transform-origin: center;
 }
+
+/*@media screen and (max-width: 768px) {*/
+    /*.home-wrapper {*/
+        /*text-align: center;*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/

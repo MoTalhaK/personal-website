@@ -105,5 +105,12 @@ input:required:hover {
     /*text-decoration-color: white;*/
 /*}*/
 
+@media screen and (max-width: 768px) {
+    .contact-container {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 
 

@@ -19,3 +19,10 @@ footer .footnote {
 footer .footnote .copyright {
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+        width: 100%;
+    }
+}

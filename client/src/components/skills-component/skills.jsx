@@ -7,6 +7,7 @@ class Skills extends Component {
             <div className="skills-container">
                 <div className="skills-fade" data-aos="fade-up">
                     <h2 id="header-title">SKILLS</h2>
+                    <div className="header-title-bar"></div>
                     <p className="skills-text">
                         I've worked with a variety of programming languages with a large emphasis on Java in my
                         undergrad. Along the

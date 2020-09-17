@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import MediaQuery from 'react-responsive'
 import {Card, CardDeck} from 'react-bootstrap';
 import './about.css';
 import AOS from 'aos';
@@ -12,9 +13,11 @@ class About extends Component {
             <div className="about-container">
                 <div className="about-fade" data-aos="fade-up">
                     <h2 id="header-title">ABOUT</h2>
-                    <p className="about-text">I am an aspiring software developer based in Toronto currently pursuing a
-                        degree in computer science at York University.</p>
-                    <p className="about-text">My goal is to bring awesome ideas to life, here on the web.</p>
+                    <div className="header-title-bar"></div>
+                    <p className="about-text">I am a software developer based in Toronto with a background in
+                    Computer Science. I enjoy building fast and responsive websites while also keeping in mind the needs of
+                    my customers and making sure that they have a enjoyable experience.</p>
+                    <p className="about-text">At the end of the day, my goal is to bring awesome ideas to life, here on the web.</p>
                 </div>
                 <CardDeck>
                     <Card data-aos="fade-up">
@@ -24,7 +27,8 @@ class About extends Component {
                         <Card.Body>
                             <Card.Title>Ottawa</Card.Title>
                             <Card.Text>
-                                Born in Pakistan, my family moved to Canada when I was very young and we first settled
+                                Born in Pakistan, my family moved to Canada when I was very young and we first
+                                settled
                                 in the country's capital, Ottawa.
                             </Card.Text>
                         </Card.Body>
@@ -42,7 +46,8 @@ class About extends Component {
                         <Card.Body>
                             <Card.Title>Mississauga</Card.Title>
                             <Card.Text>
-                                We lived in Ottawa for a short while and then moved to Brampton and then again settled
+                                We lived in Ottawa for a short while and then moved to Brampton and then again
+                                settled
                                 in Mississauga where I have spent most of my life growing up. Yes, we move a lot.
                             </Card.Text>
                         </Card.Body>
@@ -55,13 +60,14 @@ class About extends Component {
                     </Card>
                     <Card data-aos="fade-up"
                           data-aos-delay="100">
-                        <Card.Img variant="top" src="https://live.staticflickr.com/2829/34171818601_23521f8218_z.jpg"
+                        <Card.Img variant="top"
+                                  src="https://live.staticflickr.com/2829/34171818601_23521f8218_z.jpg"
                                   height="268.375px" title="The Bergeron Centre for Engineering Excellence"/>
                         <Card.Body>
                             <Card.Title>Bergeron Centre @ YorkU</Card.Title>
                             <Card.Text>
-                                Here I am now attending York University where I have learned to love programming and
-                                bringing ideas to life. I am proud to call my self a Lassondian.
+                                Then, I attended York University for Computer Science and learned many different things,
+                                including how to approach and solve a variety of software problems.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>

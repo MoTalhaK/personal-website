@@ -68,6 +68,15 @@ p {
     padding-top: 50px;
 }
 
+/*mobile design*/
+@media screen and (max-width: 768px) {
+    .about-container {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
 
 
 

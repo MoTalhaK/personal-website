@@ -96,3 +96,10 @@
 .prog-details {
     color: #A6E22E;
 }
+
+@media screen and (max-width: 768px) {
+    .skills-container {
+        text-align: center;
+        width: 100%;
+    }
+}

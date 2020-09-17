@@ -180,7 +180,7 @@ class Home extends Component {
                     }}/>
                 <div className="name" style={{opacity}}>
                     <h4>Hey, I'm</h4>
-                    <h2>Muhammad Khokhar</h2>
+                    <h2>Talha Khokhar</h2>
                     <Button className="btn-home" variant="outline-secondary" size="lg"
                             onClick={this.onScrollToAbout.bind(this)}>View my work
                         <div className="container-button">
