@@ -16,10 +16,12 @@ class Home extends Component {
             scrollTo: props.height,
             opacity: 0,
             width: 0,
-            height: 0
+            height: 0,
+            active: true
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.navRef = React.createRef();
     }
 
     componentDidMount() {
@@ -105,7 +107,6 @@ class Home extends Component {
             scrollTo: window.innerHeight
         });
     }
-
     render() {
         // control opacity when scrolling
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
@@ -114,7 +115,7 @@ class Home extends Component {
             <div className="home-wrapper" style={{"height": this.state.height}}>
                 <div className={this.state.currentScrollHeight >= window.innerHeight - 5 ? "header-wrapper" : ""}>
                     <header className="main">
-                        <Nav className="justify-content-center" activeKey="/home">
+                        <Nav className={this.state.active ? "justify-content-center" : "responsive"} activeKey="/home" ref={this.navRef}>
                             <Nav.Item>
                                 <Nav.Link href="#" onClick={() => this.scrollToHome()}>Home</Nav.Link>
                             </Nav.Item>
@@ -131,6 +132,13 @@ class Home extends Component {
                             <Nav.Item>
                                 <Nav.Link eventKey="link-1"
                                           onClick={() => this.scrollToContact()}>Contact</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="icon" onClick={() => this.setState({
+                                    active: !this.state.active
+                                })}>
+                                    <i className="fas fa-bars"></i>
+                                </Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </header>

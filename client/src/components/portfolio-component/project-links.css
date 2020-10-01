@@ -80,6 +80,10 @@
     background: url("../../images/defect_prediction.PNG") center center / cover;
 }
 
+.modal-ap .mod-header {
+    background: url("../../images/prayer_app.png") center center / cover;
+}
+
 .mod-header{
     height: 400px;
 }

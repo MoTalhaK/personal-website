@@ -14,6 +14,7 @@ import personal_site from '../../images/personal_website.png';
 import oefen from '../../images/oefen.png';
 import k_means10 from '../../images/10_means_max.png';
 import defect_prediction from '../../images/defect_prediction.PNG';
+import prayer_app from '../../images/prayer_app.png';
 
 AOS.init();
 
@@ -21,7 +22,6 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.handleMouseHover = this.handleMouseHover.bind(this);
-        this.handleShow = this.handleShow.bind(this);
         this.handleClose = this.handleClose.bind(this);
         this.state = {
             isHovering: false,
@@ -31,15 +31,10 @@ class Portfolio extends Component {
             showMessage4: false,
             showMessage5: false,
             showMessage6: false,
+            showMessage7: false,
             show: false
         };
         this.onClickHandler = this.onClickHandler.bind(this);
-    }
-
-    /*make modal visible*/
-    handleShow(e) {
-        e.preventDefault();
-        this.setState({show: true})
     }
 
     /*change state when user clicks outside of the modal or clicks the "close" button*/
@@ -50,7 +45,8 @@ class Portfolio extends Component {
             showMessage3: false,
             showMessage4: false,
             showMessage5: false,
-            showMessage6: false
+            showMessage6: false,
+            showMessage7: false
         })
     }
 
@@ -100,6 +96,11 @@ class Portfolio extends Component {
                     showMessage6: !this.state.showMessage6,
                 });
                 break;
+            case "showMessage7":
+                this.setState({
+                    showMessage7: !this.state.showMessage7,
+                });
+                break;
             default:
                 return null;
         }
@@ -120,6 +121,7 @@ class Portfolio extends Component {
                 {<JavaGameProject show={this.state.showMessage4} hide={this.handleClose} click={this.handleClose}/>}
                 {<KMeansProject show={this.state.showMessage5} hide={this.handleClose} click={this.handleClose}/>}
                 {<DefectProject show={this.state.showMessage6} hide={this.handleClose} click={this.handleClose}/>}
+                {<AdhanProject show={this.state.showMessage7} hide={this.handleClose} click={this.handleClose}/>}
                 <Container data-aos="fade-up">
                     <Row>
                         <Col xs={12} md={4}>
@@ -132,8 +134,6 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={spellsword}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -155,8 +155,6 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={starrysky}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -178,8 +176,6 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={personal_site}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -201,8 +197,6 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={oefen}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -224,8 +218,6 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={k_means10}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
@@ -247,13 +239,32 @@ class Portfolio extends Component {
                                             className="content-image"
                                             src={defect_prediction}
                                             rounded
-                                            // width={350}
-                                            // height={350}
                                         >
                                         </Image>
                                         <div className="content-details fadeIn-bottom">
                                             <h3 className="content-title">Defect Prediction</h3>
                                             <p className="content-text">Python</p>
+                                            <i className="fas fa-plus-circle"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <div className="image-container">
+                                <div className="content">
+                                    <a href="/" target="_blank"
+                                       onClick={(e) => this.onClickHandler(e, "showMessage7")}>
+                                        <div className="content-overlay"></div>
+                                        <Image
+                                            className="content-image"
+                                            src={prayer_app}
+                                            rounded
+                                        >
+                                        </Image>
+                                        <div className="content-details fadeIn-bottom">
+                                            <h3 className="content-title">Prayer App</h3>
+                                            <p className="content-text">JavaScript</p>
                                             <i className="fas fa-plus-circle"></i>
                                         </div>
                                     </a>
@@ -565,6 +576,57 @@ function DefectProject(props) {
                     <Button className="project-btn" onClick={(e) => {
                         e.preventDefault();
                         window.open("https://github.com/MoTalhaK/4313Project");
+                    }}>
+                        Source
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </div>
+    )
+}
+
+function AdhanProject(props) {
+    return (
+        <div>
+            <Modal className="modal-ap" size="lg" show={props.show} onHide={props.hide} centered>
+                <Modal.Header className="mod-header">
+                </Modal.Header>
+                <Modal.Header>
+                    <Modal.Title className="project-title"><h3>Prayer Times</h3></Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="project-text">
+                        Taking some inspiration from IslamicFinder and Muslim Pro prayer time apps,
+                        I decided to create my own web app. "My Salat" provides prayer times for your local
+                        location as well as the ability to search for prayer times anywhere in the world!
+                        Additionally, each location provides the method used to calculate the prayer timings
+                        so users know where the information is coming from.
+                    </p>
+                    <p className="project-text">
+                        The web app was developed using JavaScript, along with HTML and CSS. The prayer timings
+                        were retrieved via the "aladhan.com" API and the location services are provided by the
+                        MapBox API. For CSS, a flex layout was used to provide a responsive user experience. This
+                        is still a work in progress, as I plan to add many more features.
+                    </p>
+                    <div className="project-used">
+                        <span className="project-link">HTML</span>
+                        <span className="project-link">CSS</span>
+                        <span className="project-link">JavaScript</span>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className="close-btn" variant="secondary" onClick={props.click}>
+                        Close
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://motalhak.github.io/adhan-web/");
+                    }}>
+                        Demo
+                    </Button>
+                    <Button className="project-btn" onClick={(e) => {
+                        e.preventDefault();
+                        window.open("https://github.com/MoTalhaK/adhan-web");
                     }}>
                         Source
                     </Button>
