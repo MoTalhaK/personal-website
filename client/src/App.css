@@ -43,7 +43,8 @@ html, body {
 }
 
 .section-container.footer-component {
-    height: 210px;
+    padding: 0;
+    /*height: 210px;*/
 }
 
 @media screen and (max-width: 768px) {

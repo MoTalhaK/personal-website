@@ -33,8 +33,6 @@ h2 {
 
 .btn-home {
     color: white;
-    /*margin: auto;*/
-    /*margin-bottom: 10px;*/
     border: 2px solid;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -46,9 +44,9 @@ h2 {
 }
 
 .profile-links a {
-    /*color: #A6E22E;*/
     color: gray;
     margin-right: 16px;
+    margin-left: 16px;
 }
 
 .profile-links a:hover {

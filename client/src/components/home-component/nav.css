@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond&display=swap');
 
 .nav {
-    padding-top: 15px;
+    height: 50px;
     font-size: large;
     font-weight: normal;
     text-transform: uppercase;
 }
 
+.nav .nav-item {
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 35px;
+    margin-left: 35px;
+    background: #16151C;
+}
+
 .nav-link {
     color: white;
-    margin-right: 25px;
-    margin-left: 25px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
-    font-family: 'EB Garamond', cursive;
-    padding-top: 1px;
-    padding-bottom: 10px;
+    font-family: 'EB Garamond', sans-serif;
 }
 
 .nav-link:hover {
@@ -44,6 +49,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .nav {
+        display: block;
+    }
+    .nav .nav-item:first-child{
+        float: left;
+        margin: auto;
+    }
     .nav .nav-item .nav-link.icon {
         float: right;
         display: block;
@@ -56,19 +68,16 @@
 @media screen and (max-width: 768px) {
     .nav.responsive {
         position: relative;
-        flex-direction: column;
-        display: flex;
     }
     .nav.responsive .nav-item .nav-link.icon {
-        position: relative;
-        margin: auto;
-        /*right: 1px;*/
-        /*top: 10px;*/
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .nav.responsive .nav-item {
-        margin: auto;
-        /*float: none;*/
+        float: none;
         display: block;
-        text-align: center;
+        text-align: left;
+        margin: auto;
     }
 }

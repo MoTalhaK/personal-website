@@ -1,9 +1,12 @@
 .footer-container {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 1160px;
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+footer {
+    width: auto;
 }
 
 footer .profile-links {
@@ -11,7 +14,8 @@ footer .profile-links {
 }
 
 footer .footnote {
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 5px;
     color: #A6E22E;
     opacity: 0.6;
 }
