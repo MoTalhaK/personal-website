@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Resume from '../../images/talha_khokhar_resume.pdf';
 import './footer.css';
 
 class Footer extends Component {
@@ -10,15 +11,15 @@ class Footer extends Component {
                         <a href="https://github.com/MoTalhaK" target="_blank">
                             <i className="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/muhammadkh/" target="_blank">
+                        <a href="https://www.linkedin.com/in/talhakho/" target="_blank">
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.dropbox.com/s/rgj1sm0ab0clqxs/talha_khokhar_resume.pdf?dl=0" target="_blank">
+                        <a href={Resume} target="_blank" rel='noopener noreferrer'>
                             <i className="fas fa-file-pdf"></i>
                         </a>
                     </div>
                     <div className="footnote">
-                        Talha Khokhar <span className="copyright">© 2020</span>
+                        Talha Khokhar <span className="copyright">© 2022</span>
                     </div>
                 </footer>
             </div>

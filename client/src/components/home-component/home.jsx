@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
-import {Button} from 'react-bootstrap';
-import {Nav} from 'react-bootstrap';
-import {Particles} from "react-particles-js";
-import {Events, scroller} from 'react-scroll';
+import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Particles } from "react-particles-js";
+import { Events, scroller } from 'react-scroll';
+import Resume from '../../images/talha_khokhar_resume.pdf';
 import 'bootstrap/dist/css/bootstrap.css';
 import './home.css';
 import './nav.css';
@@ -38,7 +39,7 @@ class Home extends Component {
         window.onscroll = () => {
             const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
             if (this.state.currentScrollHeight !== newScrollHeight) {
-                this.setState({currentScrollHeight: newScrollHeight})
+                this.setState({ currentScrollHeight: newScrollHeight })
             }
         };
     }
@@ -52,7 +53,7 @@ class Home extends Component {
 
     /*function to ensure home component screen fits to browser viewport*/
     updateWindowDimensions() {
-        this.setState({width: window.innerWidth, height: window.innerHeight});
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
     /*scroll to various sections throughout the website*/
@@ -98,7 +99,7 @@ class Home extends Component {
 
     /*scroll position*/
     handleScroll() {
-        this.setState({scroll: window.scrollY});
+        this.setState({ scroll: window.scrollY });
     }
 
     updateHeight() {
@@ -112,7 +113,7 @@ class Home extends Component {
         const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
 
         return (
-            <div className="home-wrapper" style={{"height": this.state.height}}>
+            <div className="home-wrapper" style={{ "height": this.state.height }}>
                 <div className={this.state.currentScrollHeight >= window.innerHeight - 5 ? "header-wrapper" : ""}>
                     <header className="main">
                         <Nav className={this.state.active ? "justify-content-center" : "responsive"} activeKey="/home" ref={this.navRef}>
@@ -127,11 +128,11 @@ class Home extends Component {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="link-2"
-                                          onClick={() => this.scrollToPortfolio()}>Portfolio</Nav.Link>
+                                    onClick={() => this.scrollToPortfolio()}>Portfolio</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="link-1"
-                                          onClick={() => this.scrollToContact()}>Contact</Nav.Link>
+                                    onClick={() => this.scrollToContact()}>Contact</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link className="icon" onClick={() => this.setState({
@@ -186,12 +187,12 @@ class Home extends Component {
                             }
                         },
                         "retina_detect": true
-                    }}/>
-                <div className="name" style={{opacity}}>
+                    }} />
+                <div className="name" style={{ opacity }}>
                     <h4>Hey, I'm</h4>
                     <h2 id="my-name">Talha Khokhar</h2>
                     <Button className="btn-home" variant="outline-secondary" size="lg"
-                            onClick={() => this.scrollToAbout()}>View my work
+                        onClick={() => this.scrollToAbout()}>View my work
                         <div className="container-button">
                             <i id="right-arrow" className="fas fa-arrow-right"></i>
                         </div>
@@ -200,11 +201,11 @@ class Home extends Component {
                         <a href="https://github.com/MoTalhaK" target="_blank">
                             <i className="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/muhammadkh/" target="_blank">
+                        <a href="https://www.linkedin.com/in/talhakho/" target="_blank">
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.dropbox.com/s/rgj1sm0ab0clqxs/talha_khokhar_resume.pdf?dl=0"
-                           target="_blank">
+                        <a href={Resume}
+                            target="_blank" rel='noopener noreferrer'>
                             <i className="fas fa-file-pdf"></i>
                         </a>
                     </div>
